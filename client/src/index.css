@@ -1,1 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 @import "tailwindcss";
+:root {
+  --bg-color: #EDEDED;
+  --back-color: rgba(230, 155, 31, 0.08);
+  --primary: #E69B1F;
+  --primary-variant: rgba(230, 155, 31, 0.5);
+  --primary-light: rgba(230, 155, 31, 0.08);
+  --gray: rgba(63, 81, 181, 0.1);
+  --black-color: #000000;
+  --color-white: #fafafa;
+  --text-color: #BDBDBD;
+
+  --transition1: all 400ms ease-in-out;
+  --transition2: all 400ms ease;
+
+  --shadow-1: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-2: 0 6px 12px rgba(0, 0, 0, 0.15);
+  --shadow-3: 0 4px 20px rgba(0, 0, 0, 0.08);
+
+  --container-lg: 86%;
+  --container-md: 93%;
+  --container-xl: 72%
+}
+
+*  {
+    font-family: "Titillium Web", sans-serif;
+    scroll-behavior: smooth;
+}
+
+@theme {
+  /* Colors */
+  --color-primary: var(--primary);
+  --color-primary-variant: var(--primary-variant);
+  --color-primary-light: var(--primary-light);
+  --color-brand-bg: var(--bg-color);
+  --color-brand-black: var(--black-color);
+  --color-brand-white: var(--color-white);
+  --color-brand-gray: var(--gray);
+  --color-brand-text: var(--text-color);
+
+  /* Shadows */
+  --shadow-soft: var(--shadow-1);
+  --shadow-medium: var(--shadow-2);
+  --shadow-deep: var(--shadow-3);
+
+  /* Transitions */
+  --transition-smooth: var(--transition1);
+  --transition-fast: var(--transition2);
+}
+
+/* Custom Utilities for your specific container widths */
+@utility container-xl {
+  max-width: var(--container-xl);
+  margin-inline: auto;
+}
+
+@utility container-lg {
+  max-width: var(--container-lg);
+  margin-inline: auto;
+}
