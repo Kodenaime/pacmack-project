@@ -1,14 +1,14 @@
 // For the resource library (Classes, PDFs, Videos)
-export type ResourceType = 'video' | 'pdf' | 'document' | 'link';
+export type ResourceType = 'video' | 'audio' | 'pdf' | 'document';
 
 export interface Resource {
   id: string;
   title: string;
   description: string;
-  category: string; // e.g., "Missionary Care", "Education"
+  category: string;
   type: ResourceType;
   thumbnailUrl?: string;
-  link: string; // URL to the resource
+  link: string; // YouTube ID for video, URL for audio/PDF
   dateAdded: string;
 }
 

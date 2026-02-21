@@ -5,7 +5,7 @@ const Goal: React.FC = () => {
   return (
     <section className="py-20 bg-brand-white" id="goal">
       {/* Using your custom container utility from index.css */}
-      <div className="container-lg grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="container-lg grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         
         {/* Text Content */}
         <div className="flex flex-col gap-6 order-2 md:order-1">
