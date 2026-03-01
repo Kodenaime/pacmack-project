@@ -11,9 +11,11 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'About', path: 'about', isHash: true },
-    { name: 'Resources', path: '/resources', isHash: false }, 
+    { name: 'Highlights', path: '/highlights', isHash: false }, 
     { name: 'Gallery', path: '/gallery', isHash: false },
     { name: 'Contact', path: 'contact', isHash: true },
+    { name: 'Resources', path: '/resources', isHash: false },
+    
   ];
 
   // Function to handle smooth scrolling or navigation

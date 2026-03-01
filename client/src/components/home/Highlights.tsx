@@ -79,7 +79,7 @@ const Highlights: React.FC = () => {
         {/* Action Button */}
         <div className="mt-12 text-center">
           <Link 
-            to='/eventdetails' 
+            to='/highlights' 
             className="inline-block bg-primary text-brand-black px-8 py-3 rounded-lg font-bold shadow-medium transition-smooth hover:bg-primary-variant hover:-translate-y-1"
           >
             Explore All Highlights
