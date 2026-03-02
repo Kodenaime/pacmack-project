@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import Highlights from './pages/HighlightsPage'
 import Resources from './pages/Resources'
 import Gallery from './pages/Gallery'
+import JoinCommunity from './pages/CommunityRegister'
 
 const App: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const App: React.FC = () => {
         <Route path='/resources' element={<Resources />} />
         <Route path='/highlights' element={<Highlights />} />
         <Route path='/gallery' element={<Gallery/>} />
+        <Route path='/join' element={<JoinCommunity/>} />
       </Routes>
     </div>
   )

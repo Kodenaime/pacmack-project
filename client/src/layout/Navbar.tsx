@@ -77,13 +77,12 @@ const Navbar: React.FC = () => {
           ))}
 
           <li className="px-6 md:px-0 w-full md:w-auto">
-            <a 
-              href='#donate' 
-              onClick={(e) => handleNavClick(e, 'donate', true)}
+            <Link 
+              to='/join' 
               className="flex items-center justify-center gap-2 bg-primary text-brand-black px-8 py-3 rounded-full font-bold shadow-medium transition-smooth hover:scale-105 w-full md:w-auto"
             >
-              <MdOutlineFavorite /> Donate
-            </a>
+              <MdOutlineFavorite /> Join Us
+            </Link>
           </li>
         </ul>
       </nav>

@@ -2,12 +2,11 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
-// Assets (Replace with your high-resolution 2025 conference images)
-import slider1 from '../../assets/mainhero.jpeg'; // Main Gathering
-import slider2 from '../../assets/plena.jpg';    // Plenary Session
-import slider3 from '../../assets/work2.png';    // Workshop Breakout
-import slider4 from '../../assets/goals.jpeg';    // Community Fun
-import slider5 from '../../assets/venue.jpg';    // Orchid Hotel Venue
+import slider1 from '../../assets/highlights/high1.webp'; 
+import slider2 from '../../assets/highlights/high1.webp';    
+import slider3 from '../../assets/highlights/high1.webp';    
+import slider4 from '../../assets/highlights/high1.webp';    
+import slider5 from '../../assets/highlights/high1.webp';    
 
 const sliderImages = [
   { id: 1, src: slider1, alt: 'PACMACK 2025 Main Gathering' },
@@ -23,24 +22,22 @@ const HighlightsSlider: React.FC = () => {
 
   // Use useCallback to make the functions stable for use in useEffect
   const nextSlide = useCallback(() => {
-    setDirection(1); // Moving Right
+    setDirection(1); 
     setCurrentIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
   }, []);
 
   const prevSlide = useCallback(() => {
-    setDirection(-1); // Moving Left
+    setDirection(-1);
     setCurrentIndex((prevIndex) => (prevIndex - 1 + sliderImages.length) % sliderImages.length);
   }, []);
 
-  // 1. Setup Auto-Slide Timer (5 seconds)
   useEffect(() => {
     const timer = setInterval(() => {
       nextSlide();
     }, 5000); // 5000ms = 5s
 
-    // 2. Clean up the timer on component unmount
     return () => clearInterval(timer);
-  }, [nextSlide]); // Re-run if nextSlide function changes (stable with useCallback)
+  }, [nextSlide]); // Re-run if nextSlide function changes
 
   // Motion Variants for the slide transition
   const slideVariants = {
@@ -62,13 +59,11 @@ const HighlightsSlider: React.FC = () => {
     <section className="py-12 bg-brand-bg" id="slider">
       <div className="container-lg">
         
-        {/* Main Slider Container */}
         <div className="relative aspect-video md:aspect-21/9 rounded-3xl overflow-hidden shadow-deep group border-4 border-white">
           
-          {/* AnimatePresence for transition management */}
           <AnimatePresence initial={false} custom={direction}>
             <motion.img
-              key={currentIndex} // Crucial for re-triggering animation on change
+              key={currentIndex} 
               src={sliderImages[currentIndex].src}
               alt={sliderImages[currentIndex].alt}
               custom={direction}
@@ -84,7 +79,7 @@ const HighlightsSlider: React.FC = () => {
             />
           </AnimatePresence>
 
-          {/* Manual Navigation Controls (Fade-in on Hover) */}
+         
           <div className="absolute inset-0 flex items-center justify-between px-6 opacity-0 group-hover:opacity-100 transition-opacity z-10 backdrop-blur-[1px]">
             <button 
               onClick={prevSlide}
@@ -102,7 +97,7 @@ const HighlightsSlider: React.FC = () => {
             </button>
           </div>
 
-          {/* Progress Indicator Dots */}
+        
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10 bg-black/40 px-6 py-3 rounded-full">
             {sliderImages.map((_, index) => (
               <button
@@ -120,7 +115,7 @@ const HighlightsSlider: React.FC = () => {
 
         </div>
         
-        {/* Caption Area (Dynamic) */}
+       
         <div className="mt-8 text-center max-w-xl mx-auto">
           <p className="text-xl font-medium text-brand-black italic">
             "{sliderImages[currentIndex].alt}"

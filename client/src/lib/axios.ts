@@ -1,13 +1,16 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: "https://pacmack-api.onrender.com/api",
+  baseURL: 'http://localhost:5000/api',
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
+//"https://pacmack-api.onrender.com/api"
 // 'http://localhost:5000/api'
+
+
 // Add a request interceptor
 axiosInstance.interceptors.request.use(
   (config) => {

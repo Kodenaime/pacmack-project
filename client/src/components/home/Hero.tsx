@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
           <Link 
-            to='/register'  
+            to='/join'  
             className="flex items-center justify-center gap-2 bg-primary text-brand-black px-8 py-3 rounded-lg font-bold transition-smooth hover:scale-105 active:scale-95 shadow-medium"
           >
             <FaBookReader /> Join Us
