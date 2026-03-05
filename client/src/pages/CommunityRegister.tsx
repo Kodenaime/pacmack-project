@@ -136,7 +136,7 @@ const CommunityRegister = () => {
 
             <div className="flex flex-col gap-2 md:col-span-2">
               <label className="font-bold text-xs uppercase">Tell us a bit about yourself*</label>
-              <textarea name="reasonForJoining" required rows={3} className="p-3 bg-brand-bg rounded-lg outline-none resize-none" />
+              <textarea name="reasonForJoining" placeholder=' likes or favorite things e.g travels, food, adventure , making friends' required rows={3} className="p-3 bg-brand-bg rounded-lg outline-none resize-none" />
             </div>
 
             <button 

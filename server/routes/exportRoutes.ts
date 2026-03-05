@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express';
-import { exportMembersToExcel } from '../utils/exportMembers';
+import { exportMembersToExcel } from '../utils/exportMember';
 import { adminAuth } from '../middleware/auth';
 
 const router = Router();
