@@ -11,13 +11,13 @@ const Highlights: React.FC = () => {
   const highlights = [
     {
       title: "Devotions",
-      body: "Worship & Prayer Times – refreshing moments in God’s presence.",
+      body: "Worship & Prayer Times - refreshing moments in God’s presence.",
       image: work5,
       isLarge: true,
     },
     {
       title: "Plenaries",
-      body: "Fun & Connection Activities – games, music, and interactive sessions.",
+      body: "Fun & Connection Activities - games, music, and interactive sessions.",
       image: work4,
       isLarge: true,
     },
@@ -44,7 +44,7 @@ const Highlights: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
             Conference Highlights
           </h2>
-          <p className="text-brand-text text-lg">
+          <p className="text-gray-500 text-lg">
             Engaging talks and faith-filled sessions designed to equip missionary kids 
             with biblical wisdom, cultural understanding, and purpose-driven identity.
           </p>

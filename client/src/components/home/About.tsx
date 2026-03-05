@@ -26,7 +26,7 @@ const About: React.FC = () => {
                 is designed specifically for MKs and children of cross-cultural workers across Africa.
               </p>
               <p className="font-medium italic text-brand-black">
-                "Caught between cultures, managing high expectations, and carrying silent struggles—we provide 
+                "Caught between cultures, managing high expectations, and carrying silent struggles. We provide 
                 the space where these stories are heard."
               </p>
             </div>

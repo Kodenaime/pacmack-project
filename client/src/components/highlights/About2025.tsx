@@ -25,7 +25,8 @@ const About2025: React.FC = () => {
                 PACMACK 2025 was built on the foundation of the International Third Culture Kids Conference (ITCKC) held in Thailand in 2023. Inspired by the need for MK/TCK support networks in regions with fewer resources, we brought that vision home to Africa.
               </p>
               <p>
-                Designed specifically for the children of cross-cultural Christian workers, the conference provided a space for those navigating unique challenges—feeling caught between cultures and carrying silent struggles.
+                Designed specifically for the children of cross-cultural Christian workers, the conference provided a space for those navigating unique 
+                challenges, feeling caught between cultures and carrying silent struggles.
               </p>
               <p>
                 From October 1st to 5th, we gathered at the Orchid Hotels Lekki to address neglected traumas and identity struggles, helping a new generation find the grace to thrive.
