@@ -1,5 +1,5 @@
 import React from 'react';
-import goalImg from '../../assets/goals.jpeg';
+import goalImg from '../../assets/goal.webp';
 
 const Goal: React.FC = () => {
   return (
@@ -9,26 +9,30 @@ const Goal: React.FC = () => {
         
         {/* Text Content */}
         <div className="flex flex-col gap-6 order-2 md:order-1">
-          <h1 className="text-3xl md:text-4xl font-bold text-brand-black leading-tight">
-            Why the theme <span className="text-primary italic">'THRIVE'</span>?
+          <h1 className="text-2xl md:text-3xl font-bold text-brand-black leading-tight">
+            A Community Africa Had Been Waiting For
           </h1>
           
           <div className="space-y-6 text-brand-black/80 text-lg leading-relaxed">
-            <p>
-              To <strong className="text-brand-black">THRIVE</strong> means to grow or develop strongly, 
-              healthily, and do exceptionally well. We believe African MKs and CCKs can reach 
-              their highest potential because of—and in spite of—their unique upbringing.
+            <p className='text-[16px]'>
+              Existing as a convening and networking ground, a place where relationships are formed, resources are developed, and capacity for MK care is cultivated.
+              The vision of <strong className="text-brand-black">PACMACK</strong> extends far beyond a single gathering. 
+              It is to see the intentional establishment and steady growth of MK care and community across African nations, rooted in support,
+              understanding, and shared identity.
             </p>
             
-            <p>
-              African MKs are impacting every sector of society. We seek to inspire this 
-              generation to draw from the rich resource of their cross-cultural experience 
-              as a catalyst for excellence in every vocation.
+            <p className='text-[16px]'>
+              PACMACK 1.0, themed Thrive, was not a call to survive complex upbringings or merely cope with cross-cultural tension. 
+              Thrive reframed the conversation toward wholeness, purpose, and the confidence to shape their own paths. 
+              It invited African MKs and children of cross-cultural Christian workers to understand their stories, name their experiences,
+              and recognize the strengths forged through their journeys, not as anomalies to be managed, but as foundations for growth, 
+              leadership, and impact.
             </p>
             
-            <p className="p-4 border-l-4 border-primary bg-primary-light rounded-r-lg">
-              What started as a conference theme is now our community mandate: 
-              Empowering the next generation to not just survive—but <span className="font-bold">thrive</span>.
+            <p className="p-4 border-l-4 border-primary bg-primary-light rounded-r-lg text-[16px]">
+              For decades, African MKs and children of cross-cultural Christian workers have lived between worlds, 
+              cultures, languages, and expectations, often without the language or community to process those experiences.  
+              <span className="font-bold ml-1.5">PACMACK</span> created that space for learning and belonging.
             </p>
           </div>
         </div>

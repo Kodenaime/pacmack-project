@@ -34,7 +34,7 @@ const Resources: React.FC = () => {
               </div>
             </div>
 
-            <button className="flex items-center gap-2 bg-primary text-brand-black px-8 py-3 rounded-lg font-bold mx-auto transition-smooth hover:scale-105">
+            <button onClick={() => window.location.href = "/#contact"} className="flex items-center gap-2 bg-primary text-brand-black px-8 py-3 rounded-lg font-bold mx-auto transition-smooth hover:scale-105">
               <FiMessageSquare /> Suggest a Resource
             </button>
           </div>

@@ -3,17 +3,17 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 import slider1 from '../../assets/highlights/high1.webp'; 
-import slider2 from '../../assets/highlights/high1.webp';    
-import slider3 from '../../assets/highlights/high1.webp';    
-import slider4 from '../../assets/highlights/high1.webp';    
-import slider5 from '../../assets/highlights/high1.webp';    
+import slider2 from '../../assets/highlights/high2.webp';    
+import slider3 from '../../assets/highlights/high3.webp';    
+import slider4 from '../../assets/highlights/high4.webp';    
+import slider5 from '../../assets/highlights/high5.webp';    
 
 const sliderImages = [
   { id: 1, src: slider1, alt: 'PACMACK 2025 Main Gathering' },
-  { id: 2, src: slider2, alt: 'Plenary Session in Action' },
-  { id: 3, src: slider3, alt: 'Small Group Workshop' },
+  { id: 2, src: slider2, alt: 'Group Outings' },
+  { id: 3, src: slider3, alt: 'Group Outings' },
   { id: 4, src: slider4, alt: 'Community Connection' },
-  { id: 5, src: slider5, alt: 'Venue - Orchid Hotels Lekki' },
+  { id: 5, src: slider5, alt: 'Group Workshop' },
 ];
 
 const HighlightsSlider: React.FC = () => {

@@ -4,6 +4,32 @@ import { FiMaximize2, FiX, FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import Navbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
 
+import gallery1 from '../assets/gallery/gallery1.webp';
+import gallery2 from '../assets/gallery/gallery2.webp';
+import gallery3 from '../assets/gallery/gallery3.webp';
+import gallery4 from '../assets/gallery/gallery4.webp';
+import gallery5 from '../assets/gallery/gallery5.webp';
+import gallery6 from '../assets/gallery/gallery6.webp';
+import gallery7 from '../assets/gallery/gallery7.webp';
+import gallery8 from '../assets/gallery/gallery8.webp';
+import gallery9 from '../assets/gallery/gallery9.webp';
+import gallery10 from '../assets/gallery/gallery10.webp';
+import gallery11 from '../assets/gallery/gallery11.webp';
+import gallery12 from '../assets/gallery/gallery12.webp';
+import gallery13 from '../assets/gallery/gallery13.webp';
+import gallery14 from '../assets/gallery/gallery14.webp';
+import gallery15 from '../assets/gallery/gallery15.webp';
+import gallery16 from '../assets/gallery/gallery16.webp';
+import gallery17 from '../assets/gallery/gallery17.webp';
+import gallery18 from '../assets/gallery/gallery18.webp';
+import gallery19 from '../assets/gallery/gallery19.webp';
+import gallery20 from '../assets/gallery/gallery20.webp';
+import gallery21 from '../assets/gallery/gallery21.webp';
+import gallery22 from '../assets/gallery/gallery22.webp';
+import gallery23 from '../assets/gallery/gallery23.webp';
+import gallery24 from '../assets/gallery/gallery24.webp';
+
+
 interface GalleryImage {
   id: number;
   src: string;
@@ -12,16 +38,33 @@ interface GalleryImage {
 }
 
 const GALLERY_DATA: GalleryImage[] = [
-  { id: 1, src: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94', category: 'Plenaries', alt: 'Main Session' },
-  { id: 2, src: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18', category: 'Workshops', alt: 'Group Discussion' },
-  { id: 3, src: 'https://images.unsplash.com/photo-1529070532901-ba8c300ec342', category: 'Socials', alt: 'Community Dinner' },
-  { id: 4, src: 'https://images.unsplash.com/photo-1475721027187-402ad2989a3b', category: 'Plenaries', alt: 'Speaker on Stage' },
-  { id: 5, src: 'https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa', category: 'Workshops', alt: 'Learning Session' },
-  { id: 6, src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952', category: 'Socials', alt: 'Networking' },
-  { id: 7, src: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678', category: 'Plenaries', alt: 'Audience' },
+  { id: 1, src: gallery1, category: 'Discussions', alt: 'Group Discussion' },
+  { id: 2, src: gallery2, category: 'Discussions', alt: 'Group Discussion' },
+  { id: 3, src: gallery3, category: 'Plenaries', alt: 'Main Session' },
+  { id: 4, src: gallery4, category: 'Discussions', alt: 'Breakout Session' },
+  { id: 5, src: gallery5, category: 'Meals', alt: 'Break Time' },
+  { id: 6, src: gallery6, category: 'Meals', alt: 'Break Time' },
+  { id: 7, src: gallery7, category: 'Socials', alt: 'Group Activity' },
+  { id: 8, src: gallery8, category: 'Socials', alt: 'Group Activity' },
+  { id: 9, src: gallery9, category: 'Socials', alt: 'Networking' },
+  { id: 10, src: gallery10, category: 'Plenaries', alt: 'Main Session' },
+  { id: 11, src: gallery11, category: 'Socials', alt: 'Group Activity' },
+  { id: 12, src: gallery12, category: 'Plenaries', alt: 'Panel Session' },
+  { id: 13, src: gallery13, category: 'Plenaries', alt: 'Main Session' },
+  { id: 14, src: gallery14, category: 'Plenaries', alt: 'Main Session' },
+  { id: 15, src: gallery15, category: 'Plenaries', alt: 'Main Session' },
+  { id: 16, src: gallery16, category: 'Plenaries', alt: 'Main Session' },
+  { id: 17, src: gallery17, category: 'Meals', alt: 'Main Session' },
+  { id: 18, src: gallery18, category: 'Plenaries', alt: 'Main Session' },
+  { id: 19, src: gallery19, category: 'Discussions', alt: 'Networking' },
+  { id: 20, src: gallery20, category: 'Socials', alt: 'Networking' },
+  { id: 21, src: gallery21, category: 'Socials', alt: 'Networking' },
+  { id: 22, src: gallery22, category: 'Discussions', alt: 'Networking' },
+  { id: 23, src: gallery23, category: 'Socials', alt: 'Networking' },
+  { id: 24, src: gallery24, category: 'Socials', alt: 'Networking' },
 ];
 
-const categories = ['All', 'Plenaries', 'Workshops', 'Socials'];
+const categories = ['All', 'Plenaries', 'Discussions', 'Socials', 'Meals'];
 
 const Gallery: React.FC = () => {
   const [filter, setFilter] = useState('All');

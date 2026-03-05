@@ -114,15 +114,14 @@ const CommunityRegister = () => {
 
             {/* Section: Community */}
             <div className="md:col-span-2 border-b border-brand-gray/10 pb-2 mt-4">
-               <h3 className="font-black text-lg uppercase">Community Engagement</h3>
+              <h3 className="font-black text-lg uppercase">Community Engagement</h3>
             </div>
 
             <div className="flex flex-col gap-2">
               <label className="font-bold text-xs uppercase">Membership Category*</label>
               <select name="category" required className="p-3 bg-brand-bg rounded-lg outline-none">
                 <option value="MK/TCK">MK / TCK</option>
-                <option value="Parent">Parent</option>
-                <option value="Member Care">Member Care Pro</option>
+                <option value="MK/TCK Caregiver">MK/TCK Caregiver</option>
               </select>
             </div>
 
