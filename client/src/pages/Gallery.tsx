@@ -28,6 +28,9 @@ import gallery21 from '../assets/gallery/gallery21.webp';
 import gallery22 from '../assets/gallery/gallery22.webp';
 import gallery23 from '../assets/gallery/gallery23.webp';
 import gallery24 from '../assets/gallery/gallery24.webp';
+import gallery25 from '../assets/gallery/gallery25.webp';
+import gallery26 from '../assets/gallery/gallery26.webp';
+import gallery27 from '../assets/gallery/gallery27.webp';
 
 
 interface GalleryImage {
@@ -38,7 +41,7 @@ interface GalleryImage {
 }
 
 const GALLERY_DATA: GalleryImage[] = [
-  { id: 1, src: gallery1, category: 'Discussions', alt: 'Group Discussion' },
+  { id: 1, src: gallery1, category: 'Socials', alt: 'Group Discussion' },
   { id: 2, src: gallery2, category: 'Discussions', alt: 'Group Discussion' },
   { id: 3, src: gallery3, category: 'Plenaries', alt: 'Main Session' },
   { id: 4, src: gallery4, category: 'Discussions', alt: 'Breakout Session' },
@@ -55,13 +58,16 @@ const GALLERY_DATA: GalleryImage[] = [
   { id: 15, src: gallery15, category: 'Plenaries', alt: 'Main Session' },
   { id: 16, src: gallery16, category: 'Plenaries', alt: 'Main Session' },
   { id: 17, src: gallery17, category: 'Meals', alt: 'Main Session' },
-  { id: 18, src: gallery18, category: 'Plenaries', alt: 'Main Session' },
+  { id: 18, src: gallery18, category: 'Socials', alt: 'Main Session' },
   { id: 19, src: gallery19, category: 'Discussions', alt: 'Networking' },
   { id: 20, src: gallery20, category: 'Socials', alt: 'Networking' },
   { id: 21, src: gallery21, category: 'Socials', alt: 'Networking' },
   { id: 22, src: gallery22, category: 'Discussions', alt: 'Networking' },
   { id: 23, src: gallery23, category: 'Socials', alt: 'Networking' },
   { id: 24, src: gallery24, category: 'Socials', alt: 'Networking' },
+  { id: 25, src: gallery25, category: 'Socials', alt: 'Networking' },
+  { id: 26, src: gallery26, category: 'Plenaries', alt: 'Networking' },
+  { id: 27, src: gallery27, category: 'Plenaries', alt: 'Networking' },
 ];
 
 const categories = ['All', 'Plenaries', 'Discussions', 'Socials', 'Meals'];

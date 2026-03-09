@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // Assets
-import dupe from '../../assets/dupe.jpeg';
+import dupe from '../../assets/dupe.jpg';
 import ab from '../../assets/ab.jpeg';
 import grace from '../../assets/grace.jpeg';
 import moni from '../../assets/moni.jpeg';
