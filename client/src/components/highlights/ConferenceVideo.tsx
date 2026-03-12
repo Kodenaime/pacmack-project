@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiPlay, FiPause, FiMaximize, FiVolume2 } from 'react-icons/fi';
+import video from "../../assets/highlights/recap.mp4"
 
 const ConferenceVideo: React.FC = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -14,6 +15,18 @@ const ConferenceVideo: React.FC = () => {
         videoRef.current.play();
       }
       setIsPlaying(!isPlaying);
+    }
+  };
+
+  const handleFullscreen = () => {
+    if (videoRef.current) {
+      if (videoRef.current.requestFullscreen) {
+        videoRef.current.requestFullscreen();
+      } else if ((videoRef.current as any).webkitRequestFullscreen) {
+        (videoRef.current as any).webkitRequestFullscreen();
+      } else if ((videoRef.current as any).msRequestFullscreen) {
+        (videoRef.current as any).msRequestFullscreen();
+      }
     }
   };
 
@@ -55,7 +68,7 @@ const ConferenceVideo: React.FC = () => {
             onPlay={() => setIsPlaying(true)}
             onPause={() => setIsPlaying(false)}
           >
-            <source src="YOUR_ONEDRIVE_DIRECT_VIDEO_LINK" type="video/mp4" />
+            <source src={video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
 
@@ -75,7 +88,10 @@ const ConferenceVideo: React.FC = () => {
               <FiVolume2 className="text-primary" />
               <span className="text-xs font-black uppercase tracking-widest">PACMACK 2025: THRIVE RECAP</span>
             </div>
-            <FiMaximize className="cursor-pointer hover:text-primary transition-colors" />
+            <FiMaximize 
+              onClick={(e) => { e.stopPropagation(); handleFullscreen(); }}
+              className="cursor-pointer hover:text-primary transition-colors" 
+            />
           </div>
         </motion.div>
 

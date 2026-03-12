@@ -63,7 +63,7 @@ const Speakers2025: React.FC = () => {
         <div className="relative">
           <div className="flex justify-between items-end mb-12">
             <h3 className="text-4xl md:text-6xl font-black text-black uppercase tracking-tighter">
-              Meet the <span className="text-primary">Visionaries</span>
+              Meet the <span className="text-primary">Speakers</span>
             </h3>
             
             {/* Navigation Buttons - Now functional */}
