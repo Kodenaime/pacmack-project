@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
 import { FiMenu, FiX } from 'react-icons/fi';
-import { MdOutlineFavorite } from "react-icons/md";
-import { Link, useNavigate, useLocation } from 'react-router'; 
+import { Link, useNavigate, useLocation } from 'react-router';
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,28 +10,21 @@ const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'About', path: 'about', isHash: true },
-    { name: 'Highlights', path: '/highlights', isHash: false }, 
+    { name: 'Programs', path: '/programs', isHash: false },
     { name: 'Gallery', path: '/gallery', isHash: false },
     { name: 'Contact', path: 'contact', isHash: true },
-    { name: 'Resources', path: '/resources', isHash: false },
-    
   ];
 
-  // Function to handle smooth scrolling or navigation
   const handleNavClick = (e: React.MouseEvent, path: string, isHash: boolean) => {
     setMenuOpen(false);
 
     if (isHash) {
       e.preventDefault();
-      
-      // If we're already on the home page, just scroll
       if (location.pathname === '/') {
         const element = document.getElementById(path);
         element?.scrollIntoView({ behavior: 'smooth' });
       } else {
-        // If we're on another page, go home first with the hash
         navigate(`/#${path}`);
-        // Small timeout to allow the page to load before scrolling
         setTimeout(() => {
           const element = document.getElementById(path);
           element?.scrollIntoView({ behavior: 'smooth' });
@@ -43,7 +35,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-brand-white shadow-soft">
-      <nav className="w-full md:max-w-lg mx-auto h-20 flex justify-between items-center px-6 md:px-0">
+      <nav className="w-full md:max-w-[var(--container-lg)] mx-auto h-20 flex justify-between items-center px-6 md:px-0">
         
         <Link to="/" className="w-14 md:w-20 transition-smooth hover:scale-105">
           <img src={logo} alt="Pacmack Logo" className="w-full h-auto" />
@@ -77,12 +69,15 @@ const Navbar: React.FC = () => {
           ))}
 
           <li className="px-6 md:px-0 w-full md:w-auto">
-            <Link 
-              to='/join' 
-              className="flex items-center justify-center gap-2 bg-primary text-brand-black px-8 py-3 rounded-full font-bold shadow-medium transition-smooth hover:scale-105 w-full md:w-auto"
+            <a 
+              href='https://forms.gle/q8XRATaJV7CLmxqH9' 
+              target="_blank"
+              rel="noreferrer"
+              onClick={() => setMenuOpen(false)}
+              className="flex items-center justify-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold shadow-medium transition-smooth hover:scale-105 w-full md:w-auto"
             >
-              <MdOutlineFavorite /> Join Us
-            </Link>
+              Register Now
+            </a>
           </li>
         </ul>
       </nav>

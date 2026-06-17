@@ -6,58 +6,66 @@ import { Link } from 'react-router';
 
 const Hero: React.FC = () => {
   return (
-    <header className="relative w-full h-screen bg-[url('/mainhero.jpeg')] bg-cover bg-center text-brand-white">
+    <header className="relative w-full h-screen bg-brand-white overflow-hidden text-brand-black">
+      {/* Background Image Container that is scaled slightly larger to cover white edges */}
+      <div className="absolute inset-0 w-full h-full">
+        <div className="w-[110%] h-[110%] -translate-x-[5%] -translate-y-[5%] bg-[url('/mainhero.webp')] bg-cover bg-center opacity-90 mix-blend-multiply"></div>
+      </div>
+      
+      {/* Full screen subtle overlay instead of a box */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/80 pointer-events-none"></div>
+
       <Navbar />
       
       {/* Hero Overlay Container */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[900px] mt-16 p-8 flex flex-col items-center text-center bg-black/50 rounded-2xl backdrop-blur-sm">
+      <div className="relative z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[900px] mt-16 p-8 flex flex-col items-center text-center">
         
         {/* Status Badge */}
-        <div className="flex items-center gap-2 border border-brand-white px-4 py-2 rounded-full mb-6 transition-smooth hover:bg-brand-white/10">
-          <p className="text-sm md:text-base font-medium">Welcome to the PACMACK Community</p>
-        </div>
+        {/* <div className="flex items-center gap-2 border-2 border-brand-black px-5 py-2 rounded-full mb-6 bg-white/80 backdrop-blur-sm shadow-sm transition-smooth hover:bg-white">
+          <p className="text-sm md:text-base font-bold text-brand-black">Welcome to the PACMACK Community</p>
+        </div> */}
 
-        <div className="relative w-full">
+        <div className="relative w-full drop-shadow-md">
           {/* Main Title */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-1 leading-tight">
-            Pan-African Conference
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-2 leading-tight text-brand-black drop-shadow-sm">
+            Pan-African Care
           </h1>
 
           {/* Floating "For" Badge - Visible on Desktop only */}
-          <div className="hidden md:flex absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-12 bg-primary w-12 h-12 items-center justify-center rounded-full text-brand-black font-bold shadow-deep">
+            <div className="hidden md:flex absolute top-[15%] left-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-12 bg-primary w-14 h-14 items-center justify-center rounded-full text-white font-black shadow-lg text-lg">
             For
           </div>
 
           <div className="mt-4">
             {/* Mobile "for" inline badge */}
-            <span className="md:hidden inline-block bg-primary text-brand-black px-2 py-1 rounded-full text-xs font-bold mb-2 mr-2">
+            <span className="md:hidden inline-block bg-primary text-white px-3 py-1 rounded-full text-sm font-bold mb-3 mr-2 shadow-sm">
               for
             </span>
             
-            <h2 className="text-xl md:text-3xl lg:text-4xl font-bold mb-2">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-black mb-4 text-brand-black drop-shadow-sm">
               Missionary And Cross-cultural Kids (PACMACK)
             </h2>
             
-            <p className="text-sm md:text-xl text-brand-text max-w-2xl mx-auto">
+            <p className="text-base md:text-xl text-brand-black/80 font-bold max-w-3xl mx-auto drop-shadow-sm leading-relaxed">
               Empowering the young and adult children of African Christian cross-cultural workers
             </p>
           </div>
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full sm:w-auto">
+        <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
           <Link 
             to='/join'  
-            className="flex items-center justify-center gap-2 bg-primary text-brand-black px-8 py-3 rounded-lg font-bold transition-smooth hover:scale-105 active:scale-95 shadow-medium"
+            className="flex items-center justify-center gap-2 bg-primary text-white px-10 py-4 rounded-lg font-black uppercase tracking-wider transition-smooth hover:scale-105 active:scale-95 shadow-lg"
           >
-            <FaBookReader /> Join Us
+            <FaBookReader size={20} /> Join Us
           </Link>
           
           <a 
             href='#donate'  
-            className="flex items-center justify-center gap-2 border-2 border-brand-white px-8 py-3 rounded-lg font-bold transition-smooth hover:bg-brand-white hover:text-brand-black"
+            className="flex items-center justify-center gap-2 border-2 border-brand-black bg-white/50 text-brand-black px-10 py-4 rounded-lg font-black uppercase tracking-wider transition-smooth hover:bg-black hover:text-white shadow-lg"
           >
-            <FiGift /> Donate
+            <FiGift size={20} /> Donate
           </a>
         </div>
       </div>
