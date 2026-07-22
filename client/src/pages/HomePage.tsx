@@ -25,9 +25,9 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Hero />
+      <ParentsConferenceTeaser />
       <About />
       <Goal />
-      <ParentsConferenceTeaser />
       <Highlights />
       <Testimonials />
       <Sponsors />

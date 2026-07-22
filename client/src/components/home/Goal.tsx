@@ -15,24 +15,23 @@ const Goal: React.FC = () => {
           
           <div className="space-y-6 text-brand-black/80 text-lg leading-relaxed">
             <p className='text-[16px]'>
-              Existing as a convening and networking ground, a place where relationships are formed, resources are developed, and capacity for MK care is cultivated.
-              The vision of <strong className="text-brand-black">PACMACK</strong> extends far beyond a single gathering. 
-              It is to see the intentional establishment and steady growth of MK care and community across African nations, rooted in support,
-              understanding, and shared identity.
+              PACMACK was born from a need that had long existed across Africa: a place where Missionary Kids (MKs) and children of cross-cultural Christian workers could find community, belonging, and understanding among people who shared similar life experiences.
             </p>
-            
+
             <p className='text-[16px]'>
-              PACMACK 1.0, themed Thrive, was not a call to survive complex upbringings or merely cope with cross-cultural tension. 
-              Thrive reframed the conversation toward wholeness, purpose, and the confidence to shape their own paths. 
-              It invited African MKs and children of cross-cultural Christian workers to understand their stories, name their experiences,
-              and recognize the strengths forged through their journeys, not as anomalies to be managed, but as foundations for growth, 
-              leadership, and impact.
+              More than a conference, <strong className="text-brand-black">PACMACK</strong> is a growing movement committed to strengthening MK care across the continent. It serves as a gathering point where meaningful relationships are formed, resources are shared, and individuals, families, churches, and organizations are equipped to better understand and support the unique journey of African MKs. The vision extends beyond a single event. <strong className="text-brand-black">PACMACK</strong> seeks to foster sustainable MK communities and intentional care networks throughout Africa, creating spaces where MKs are seen, supported, and empowered to flourish.
             </p>
-            
+
+            <p className='text-[16px]'>
+              The inaugural conference, <strong className="text-brand-black">PACMACK 1.0</strong>, carried the theme <strong className="text-brand-black">Thrive</strong>. It challenged the idea that Missionary Kids should simply survive the complexities of cross-cultural life or learn to cope with its challenges. Instead, <em>Thrive</em> invited participants to embrace a fuller vision of life marked by wholeness, purpose, resilience, and hope.
+            </p>
+
+            <p className='text-[16px]'>
+              Throughout the conference, African MKs were encouraged to understand their unique stories, recognize the value of their experiences, and discover the strengths that had been shaped through lives lived across cultures. Rather than viewing their backgrounds as something unusual to overcome, they were challenged to see them as a foundation for growth, leadership, and meaningful impact in the world around them.
+            </p>
+
             <p className="p-4 border-l-4 border-primary bg-primary-light rounded-r-lg text-[16px]">
-              For decades, African MKs and children of cross-cultural Christian workers have lived between worlds, 
-              cultures, languages, and expectations, often without the language or community to process those experiences.  
-              <span className="font-bold ml-1.5">PACMACK</span> created that space for learning and belonging.
+              As <strong className="text-brand-black">PACMACK</strong> continues to grow, its commitment remains the same: to cultivate a thriving community where African MKs are connected, cared for, equipped, and inspired to live out their calling with confidence.
             </p>
           </div>
         </div>

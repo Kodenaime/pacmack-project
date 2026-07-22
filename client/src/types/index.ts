@@ -30,3 +30,11 @@ export interface GalleryItem {
   alt: string;
   category: 'workshop' | 'plenary' | 'social';
 }
+
+// For the Team Member details
+export interface TeamMember {
+  id: number;
+  image: string;
+  name: string;
+  body: string;
+}

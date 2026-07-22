@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FiX } from 'react-icons/fi';
 
-import coreTeam from '../../data/coreTeam';
+import mkConference2025 from '../../data/mkConference2025';
 
 interface TeamMember {
   id: number;
@@ -10,7 +10,7 @@ interface TeamMember {
   body: string;
 }
 
-const Team: React.FC = () => {
+const MkConferenceTeam: React.FC = () => {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   const truncateText = (text: string, words = 12) => {
@@ -20,25 +20,22 @@ const Team: React.FC = () => {
   };
 
   return (
-    <section className="py-20 bg-brand-white" id="team">
+    <section className="py-20 bg-brand-bg" id="mk-team">
       <div className="container-lg">
         
-        {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">Core Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">Planning Committee</h2>
           <p className="text-brand-text max-w-2xl mx-auto">
-            Meet the passionate team working behind the scenes to prayerfully organize and coordinate the PACMACK vision.
+            Meet the dedicated team that prayerfully planned and organized the PACMACK MK Conference 2025.
           </p>
         </div>
 
-        {/* Horizontal Scroll Slider */}
         <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory no-scrollbar cursor-grab active:cursor-grabbing">
-          {coreTeam.map(({ id, name, image, body }) => (
+          {mkConference2025.map(({ id, name, image, body }) => (
             <div 
               key={id} 
-              className="min-w-70 md:min-w-[320px] bg-brand-white rounded-2xl shadow-soft snap-center flex flex-col border border-brand-gray/20 transition-smooth hover:shadow-medium"
+              className="min-w-[280px] md:min-w-[320px] bg-brand-white rounded-2xl shadow-soft snap-center flex flex-col border border-brand-gray/20 transition-smooth hover:shadow-medium"
             >
-              {/* Image Container */}
               <div className="h-72 w-full overflow-hidden rounded-t-2xl">
                 <img 
                   src={image} 
@@ -47,7 +44,6 @@ const Team: React.FC = () => {
                 />
               </div>
 
-              {/* Content */}
               <div className="p-6 flex flex-col grow">
                 <h3 className="text-xl font-bold text-brand-black mb-3">{name}</h3>
                 <p className="text-sm text-brand-text leading-relaxed grow">
@@ -65,18 +61,15 @@ const Team: React.FC = () => {
           ))}
         </div>
 
-        {/* Scroll Hint for Desktop */}
         <p className="text-center text-xs text-brand-text/50 mt-4 animate-pulse">
           ← Swipe or Scroll to see more →
         </p>
       </div>
 
-      {/* Member Bio Modal */}
       {selectedMember && (
         <div className="fixed inset-0 z-100 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-          <div className="bg-white text-brand-black w-full max-w-sm max-h-[90vh] overflow-y-auto rounded-2xl relative shadow-deep animate-in fade-in zoom-in duration-300">
+          <div className="bg-white text-brand-black w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl relative shadow-deep animate-in fade-in zoom-in duration-300">
             
-            {/* Close Button */}
             <button 
               className="absolute top-4 right-4 p-2 text-2xl text-brand-text hover:text-brand-black transition-smooth z-10" 
               onClick={() => setSelectedMember(null)}
@@ -85,7 +78,6 @@ const Team: React.FC = () => {
             </button>
             
             <div className="p-6">
-              {/* Image */}
               <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden border-4 border-primary/20">
                 <img 
                   src={selectedMember.image} 
@@ -94,12 +86,10 @@ const Team: React.FC = () => {
                 />
               </div>
 
-              {/* Name */}
               <h3 className="text-xl font-bold text-brand-black text-center mb-4">
                 {selectedMember.name}
               </h3>
 
-              {/* Full Bio */}
               <p className="text-sm text-neutral-700 leading-relaxed">
                 {selectedMember.body}
               </p>
@@ -111,4 +101,5 @@ const Team: React.FC = () => {
   );
 };
 
-export default Team;
+export default MkConferenceTeam;
+;

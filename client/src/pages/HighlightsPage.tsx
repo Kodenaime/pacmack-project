@@ -8,6 +8,7 @@ import Donation from '../components/home/Donation'
 import Speakers2025 from '../components/highlights/Speakers2025'
 import ConferenceVideo from '../components/highlights/ConferenceVideo'
 import AboutConference from '../components/highlights/AboutConference'
+import MkConferenceTeam from '../components/highlights/MkConferenceTeam'
 
 const HighlightsPage: React.FC = () => {
 
@@ -27,6 +28,7 @@ const HighlightsPage: React.FC = () => {
       <About2025 />
       <HighlightsSlider />
       <Speakers2025 />
+      <MkConferenceTeam />
       <ConferenceVideo />
       <Donation />
       <Footer />

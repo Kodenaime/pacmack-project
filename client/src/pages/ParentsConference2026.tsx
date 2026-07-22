@@ -2,6 +2,7 @@ import React from 'react';
 import { FiHelpCircle } from 'react-icons/fi';
 import Navbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
+import ParentsConferenceTeam from '../components/parents/ParentsConferenceTeam';
 
 const ParentsConference2026: React.FC = () => {
   return (
@@ -183,6 +184,7 @@ const ParentsConference2026: React.FC = () => {
             </div>
           </div>
         </section>
+        <ParentsConferenceTeam />
       </main>
 
       <Footer />

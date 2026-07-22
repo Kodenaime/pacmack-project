@@ -6,14 +6,11 @@ import { Link } from 'react-router';
 
 const Hero: React.FC = () => {
   return (
-    <header className="relative w-full h-screen bg-brand-white overflow-hidden text-brand-black">
+    <header className="relative w-full h-screen bg-brand-white overflow-hidden text-white">
       {/* Background Image Container that is scaled slightly larger to cover white edges */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="w-[110%] h-[110%] -translate-x-[5%] -translate-y-[5%] bg-[url('/mainhero.webp')] bg-cover bg-center opacity-90 mix-blend-multiply"></div>
+        <div className="w-[110%] h-[110%] -translate-x-[5%] -translate-y-[5%] bg-[url('/mainhero.webp')] bg-cover bg-center"></div>
       </div>
-      
-      {/* Full screen subtle overlay instead of a box */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-white/40 to-white/80 pointer-events-none"></div>
 
       <Navbar />
       
@@ -25,9 +22,9 @@ const Hero: React.FC = () => {
           <p className="text-sm md:text-base font-bold text-brand-black">Welcome to the PACMACK Community</p>
         </div> */}
 
-        <div className="relative w-full drop-shadow-md">
+        <div className="relative w-full drop-shadow-md bg-black/60 backdrop-blur-md rounded-2xl p-6 md:p-10 border border-white/10">
           {/* Main Title */}
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-2 leading-tight text-brand-black drop-shadow-sm">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-2 leading-tight text-white drop-shadow-sm">
             Pan-African Care
           </h1>
 
@@ -42,31 +39,31 @@ const Hero: React.FC = () => {
               for
             </span>
             
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-black mb-4 text-brand-black drop-shadow-sm">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-black mb-4 text-white drop-shadow-sm">
               Missionary And Cross-cultural Kids (PACMACK)
             </h2>
             
-            <p className="text-base md:text-xl text-brand-black/80 font-bold max-w-3xl mx-auto drop-shadow-sm leading-relaxed">
+            <p className="text-base md:text-xl text-white/80 font-bold max-w-3xl mx-auto drop-shadow-sm leading-relaxed">
               Empowering the young and adult children of African Christian cross-cultural workers
             </p>
           </div>
-        </div>
 
-        {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto">
-          <Link 
-            to='/join'  
-            className="flex items-center justify-center gap-2 bg-primary text-white px-10 py-4 rounded-lg font-black uppercase tracking-wider transition-smooth hover:scale-105 active:scale-95 shadow-lg"
-          >
-            <FaBookReader size={20} /> Join Us
-          </Link>
-          
-          <a 
-            href='#donate'  
-            className="flex items-center justify-center gap-2 border-2 border-brand-black bg-white/50 text-brand-black px-10 py-4 rounded-lg font-black uppercase tracking-wider transition-smooth hover:bg-black hover:text-white shadow-lg"
-          >
-            <FiGift size={20} /> Donate
-          </a>
+          {/* Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 mt-10 w-full sm:w-auto items-center justify-center">
+            <Link 
+              to='/join'  
+              className="flex items-center justify-center gap-2 bg-primary text-white px-10 py-4 rounded-lg font-black uppercase tracking-wider transition-smooth hover:scale-105 active:scale-95 shadow-lg"
+            >
+              <FaBookReader size={20} /> Join Us
+            </Link>
+            
+            <a 
+              href='#donate'  
+              className="flex items-center justify-center gap-2 border-2 border-white/40 bg-white/10 text-white px-10 py-4 rounded-lg font-black uppercase tracking-wider transition-smooth hover:bg-white hover:text-black shadow-lg"
+            >
+              <FiGift size={20} /> Donate
+            </a>
+          </div>
         </div>
       </div>
     </header>
