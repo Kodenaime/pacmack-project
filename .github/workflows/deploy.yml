@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.8
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
@@ -26,7 +26,7 @@ jobs:
           npm ci
           npm run build
 
-      - name: Deploy to Hostinger via FTP
+      - name: Install lftp & deploy
         env:
           FTP_HOST: ${{ secrets.FTP_HOST }}
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
@@ -34,4 +34,5 @@ jobs:
           FTP_PORT: ${{ secrets.FTP_PORT }}
           FTP_TARGET_DIR: ${{ secrets.FTP_TARGET_DIR }}
         run: |
-          lftp -c "open -u $FTP_USERNAME,$FTP_PASSWORD -p $FTP_PORT $FTP_HOST; mirror -R --delete-first client/build/ $FTP_TARGET_DIR"
+          sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+          lftp -c "set ftp:ssl-allow no; open -u '$FTP_USERNAME','$FTP_PASSWORD' -p $FTP_PORT $FTP_HOST; mirror -R --delete-first client/build/ $FTP_TARGET_DIR"
