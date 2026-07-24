@@ -34,7 +34,7 @@ const ParentsConferenceTeam: React.FC = () => {
           {parentsConference2026.map(({ id, name, image, body }) => (
             <div 
               key={id} 
-              className="min-w-[280px] md:min-w-[320px] max-w-[360px] bg-brand-white rounded-2xl shadow-soft flex flex-col border border-brand-gray/20 transition-smooth hover:shadow-medium"
+              className="min-w-70 md:min-w-[320px] max-w-90 bg-brand-white rounded-2xl shadow-soft flex flex-col border border-brand-gray/20 transition-smooth hover:shadow-medium"
             >
               <div className="h-72 w-full overflow-hidden rounded-t-2xl">
                 <img 
