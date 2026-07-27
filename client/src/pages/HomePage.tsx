@@ -10,6 +10,7 @@ import Contact from '../components/home/Contact'
 import Donation from '../components/home/Donation'
 import Footer from '../layout/Footer'
 import Testimonials from '../components/home/Testimonials'
+import CountdownTimer from '../components/parents/CountdownTimer'
 import ParentsConferenceTeaser from '../components/parents/ParentsConferenceTeaser'
 
 const HomePage: React.FC = () => {
@@ -25,6 +26,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Hero />
+      <CountdownTimer />
       <ParentsConferenceTeaser />
       <About />
       <Goal />
