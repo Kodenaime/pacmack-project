@@ -3,15 +3,18 @@ import { FiHelpCircle } from 'react-icons/fi';
 import Navbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
 import ParentsConferenceTeam from '../components/parents/ParentsConferenceTeam';
+import ConferenceSpeakers from '../components/parents/ConferenceSpeakers';
+import PlenaryTopics from '../components/parents/PlenaryTopics';
+import ConferenceWorkshops from '../components/parents/ConferenceWorkshops';
 
 const ParentsConference2026: React.FC = () => {
   return (
     <div className="bg-brand-bg min-h-screen flex flex-col font-sans">
       <Navbar />
 
-      <main className="grow pt-32">
+      <main className="grow ">
         {/* Hero Section */}
-        <section className="bg-black text-white py-20 relative overflow-hidden">
+        <section className="bg-black text-white pt-32 py-20 relative overflow-hidden">
           <div className="container-lg">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
@@ -59,67 +62,25 @@ const ParentsConference2026: React.FC = () => {
         {/* Introduction Context */}
         <section className="py-16 bg-brand-white border-b border-brand-gray/10">
           <div className="container-lg max-w-3xl text-lg text-brand-black/90 leading-relaxed space-y-6">
-            <p className="text-[16px]">
-              Missionary Kids and Third Culture Kids are a global phenomenon that is a reality for the children of African Cross-cultural missionaries and pastors.
-            </p>
-            <p className="text-[16px]">
-              The children of these workers come away with many cultural colors, rooted and uprooted as often as mission service moves the family around. They are impacted in ways that most parents do not understand.
-            </p>
-            {/* Fixed: Border and background colors map perfectly to Goal layout rules */}
+            <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-brand-black mb-6 border-b-4 border-black pb-2">
+              Why a Conference for Parents of TCKs?
+            </h2>
+            <div className="text-gray-700 space-y-4 leading-relaxed text-[16px]">
+                <p>African missionary parents love their children deeply. But love alone is not enough.</p>
+                <p>After PACMACK's 2025 conference for MKs and TCKs, one truth stood out above all others: the families sending Africa's missionaries to the field are largely on their own, unequipped, unsupported, and unseen.</p>
+              </div>
             <p className="font-bold border-l-4 border-primary pl-4 italic bg-primary-light rounded-r-lg text-[16px] p-4">
               PACMACK parents conference is the place for parents, MK caregivers, and mission leaders to gain a deeper understanding of MKs and TCKs and to find resources to support and care for them.
             </p>
           </div>
-        </section>
+        </section>        
+        
+        <ConferenceSpeakers />
+        <PlenaryTopics />
+        <ConferenceWorkshops />
+        <ParentsConferenceTeam />
 
-        {/* Why/Gap Two-Column Layout */}
-        <section className="py-20 bg-brand-bg">
-          <div className="container-lg grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-            <div className="bg-brand-white p-8 md:p-12 border border-brand-gray/10 shadow-soft">
-              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-brand-black mb-6 border-b-4 border-black pb-2">
-                Why a Conference for Parents of TCKs?
-              </h2>
-              <div className="text-brand-text space-y-4 leading-relaxed text-[16px]">
-                <p>African missionary parents love their children deeply. But love alone is not enough.</p>
-                <p>After PACMACK's 2025 conference for MKs and TCKs, one truth stood out above all others: the families sending Africa's missionaries to the field are largely on their own — unequipped, unsupported, and unseen.</p>
-              </div>
-            </div>
-
-            <div className="bg-brand-white p-8 md:p-12 border border-brand-gray/10 shadow-soft">
-              {/* Fixed: Swapped custom orange layout token for system primary tracking */}
-              <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-brand-black mb-6 border-b-4 border-primary pb-2">
-                The Gap Nobody Is Talking About
-              </h2>
-              <div className="text-brand-text space-y-4 leading-relaxed text-[16px]">
-                <p>Missionary member care was not designed with African families in mind.</p>
-                <p>Parents are raising children in high-risk, high-stress environments — navigating trauma, grief, identity crises, and educational instability — with no training, no safety net, and no community that truly understands. They are in survival mode. And without meaning to, the weight they carry is being transferred to their children.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* Real Consequences Block */}
-        <section className="py-16 bg-brand-white">
-          <div className="container-lg max-w-4xl text-brand-black/80 space-y-6 leading-relaxed">
-            <p className="text-[16px]">
-              The consequences are real: identity struggles, broken family relationships, children who walk away from faith — and missionaries who leave the field not because the calling faded, but because family pain became unbearable.
-            </p>
-            <p className="text-[16px]">
-              Unlike missionary families in the Global North, many African TCKs did not grow up watching generations before them embrace cross-cultural service. There is no inherited framework. No roadmap. And too often, no one telling parents: this is normal — and there is help.
-            </p>
-            <p className="font-black text-xl text-black uppercase tracking-tight pt-4">
-              This Conference Exists to Change That
-            </p>
-            <p className="text-[16px]">
-              The 2026 PACMACK Parents Conference is a dedicated space for African missionary parents to be equipped, encouraged, and seen.
-            </p>
-            <p className="text-[16px]">
-              Many parents have never heard the term "Third Culture Kid." Many do not understand why their child seems caught between worlds — or why the very thing they gave up so much for is producing conflict, distance, and pain at home. This conference addresses that — directly, practically, and without shame.
-            </p>
-          </div>
-        </section>
-
-        {/* What We're Here to Do - Grid */}
+        {/* What We're Here to Do */}
         <section className="py-20 bg-brand-bg">
           <div className="container-lg">
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter text-center mb-16">
@@ -128,11 +89,12 @@ const ParentsConference2026: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { title: "Encourage", text: "You are not failing. What you are experiencing is part of raising a TCK. We create space for parents to speak honestly, share their stories, and break the isolation that too many carry alone." },
-                { title: "Equip", text: "From TCK grief and trauma to identity, mental health, deconstruction, and education options in African contexts — parents leave with real tools, not just inspiration." },
-                { title: "Prevent Harm", text: "Unprepared responses cause unintended damage. We help parents recognise the patterns — and interrupt them before they take root." },
-                { title: "Reduce Attrition", text: "Family hardship is the leading reason missionaries leave the field. We are committed to helping parents stay — not by minimising the struggle, but by walking through it together." },
-                { title: "Raise Resilient Children", text: "Children who know who they are do not need to reject their faith or their calling to find themselves. We help parents raise TCKs who are grounded, whole, and free to choose." }
+                { title: "Educate", text: "Deepen your understanding of MK/TCK identity and the lifelong impact of missionary life on children." },
+                { title: "Equip", text: "Leave with practical tools for intentional care, empathy, listening, and meaningful connection at every stage of transition." },
+                { title: "Share", text: "Find a safe space for African missionary parents to share challenges and triumphs with others who truly understand." },
+                { title: "Understand", text: "Explore how generational differences shape communication and values within missionary families." },
+                { title: "Address", text: "Confront trauma, transitions, and identity challenges while addressing the unique realities of African MKs and TCKs." },
+                // { title: "Connect", text: "Build a supportive community through networking, shared stories, and connections to MK/TCK care resources." }
               ].map((item, idx) => (
                 <div key={idx} className="bg-brand-white p-8 shadow-soft border-t-4 border-black flex flex-col gap-4">
                   {/* Fixed: Component heading matches layout accenting strategy */}
@@ -147,18 +109,22 @@ const ParentsConference2026: React.FC = () => {
           </div>
         </section>
 
-        {/* Triggers Questions Section */}
+        {/* Trigger Questions Section */}
         <section className="py-20 bg-brand-white">
-          <div className="container-lg max-w-4xl">
+          <div className="container-lg">
             <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight mb-10 text-center md:text-left">
               The Conference will address issues such as:
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               {[
-                "What do I do when my child starts questioning everything — their faith, their identity, their place in the world?",
-                "Could my child be carrying heart wounds I haven't noticed?",
-                "What do I do when my MK seems lost, rebellious, or has walked away altogether?",
-                "How do I protect my child from harm — spiritual, emotional, physical — in spaces that should be safe? Etc."
+                "What does it truly mean to obey God with my child on the altar, and not treat my family as the sacrifice?",
+                "How do I recognise and nurture the unique identity of my MK/TCK child as they grow between cultures?",
+                "What are the real challenges of the African missionary parent's call, and what should I heed along the way?",
+                "How can my child become a world changer, not in spite of the challenges, but because of them?",
+                "How do I raise my children well when ministry demands compete with family presence?",
+                "How do I navigate departure and re-entry so my family moves through transition without falling apart?",
+                "What educational options fit my child's context, and how do I choose well on the field?",
+                "How do I nurture a stable, Christ-centered identity in my child when we move often?"
               ].map((q, idx) => (
                 <div key={idx} className="flex gap-4 p-6 bg-brand-bg rounded-none border-l-4 border-black">
                   {/* Fixed: Icon maps to master styling token */}
@@ -184,7 +150,6 @@ const ParentsConference2026: React.FC = () => {
             </div>
           </div>
         </section>
-        <ParentsConferenceTeam />
       </main>
 
       <Footer />

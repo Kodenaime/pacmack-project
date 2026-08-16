@@ -15,7 +15,7 @@ const Hero: React.FC = () => {
       <Navbar />
       
       {/* Hero Overlay Container */}
-      <div className="relative z-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[900px] mt-16 p-8 flex flex-col items-center text-center">
+      <div className="relative z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-225 mt-16 p-8 flex flex-col items-center text-center">
         
         {/* Status Badge */}
         {/* <div className="flex items-center gap-2 border-2 border-brand-black px-5 py-2 rounded-full mb-6 bg-white/80 backdrop-blur-sm shadow-sm transition-smooth hover:bg-white">

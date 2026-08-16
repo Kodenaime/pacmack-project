@@ -30,11 +30,11 @@ const ParentsConferenceTeam: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex justify-center gap-6 flex-wrap">
+        <div className="flex gap-6 overflow-x-auto pb-8 snap-x snap-mandatory no-scrollbar cursor-grab active:cursor-grabbing">
           {parentsConference2026.map(({ id, name, image, body }) => (
             <div 
               key={id} 
-              className="min-w-70 md:min-w-[320px] max-w-90 bg-brand-white rounded-2xl shadow-soft flex flex-col border border-brand-gray/20 transition-smooth hover:shadow-medium"
+              className="min-w-70 md:min-w-[320px] bg-brand-white rounded-2xl shadow-soft snap-center flex flex-col border border-brand-gray/20 transition-smooth hover:shadow-medium"
             >
               <div className="h-72 w-full overflow-hidden rounded-t-2xl">
                 <img 
@@ -60,11 +60,16 @@ const ParentsConferenceTeam: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Scroll Hint */}
+        <p className="text-center text-xs text-brand-text/50 mt-4 animate-pulse">
+          ← Swipe or Scroll to see more →
+        </p>
       </div>
 
       {selectedMember && (
         <div className="fixed inset-0 z-100 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
-          <div className="bg-white text-brand-black w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-2xl relative shadow-deep animate-in fade-in zoom-in duration-300">
+          <div className="bg-white text-brand-black w-full max-w-sm max-h-[90vh] overflow-y-auto rounded-2xl relative shadow-deep animate-in fade-in zoom-in duration-300">
             
             <button 
               className="absolute top-4 right-4 p-2 text-2xl text-brand-text hover:text-brand-black transition-smooth z-10" 

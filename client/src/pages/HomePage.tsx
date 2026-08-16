@@ -26,8 +26,8 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Hero />
-      <CountdownTimer />
       <ParentsConferenceTeaser />
+      <CountdownTimer />
       <About />
       <Goal />
       <Highlights />
