@@ -21,7 +21,7 @@ const ParentsConferenceTeaser: React.FC = () => {
           {/* Right: Info */}
           <div className="text-center lg:text-left">
             <span className="text-primary font-bold uppercase tracking-widest text-xs md:text-sm inline-block mb-4">
-              Upcoming National Event 2026
+              Upcoming National 2026
             </span>
 
             <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter leading-tight mb-2">
@@ -43,7 +43,7 @@ const ParentsConferenceTeaser: React.FC = () => {
             </div>
 
             <p className="text-brand-black/70 max-w-xl mb-8 text-sm md:text-base leading-relaxed">
-              A dedicated space for African missionary parents to be equipped, encouraged, and seen.
+              A conference dedicated for African missionary parents to be encouraged, and seen.
               Come find the language, tools, resources, and a community that cares.
             </p>
 

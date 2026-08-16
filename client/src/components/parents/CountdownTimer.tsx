@@ -4,13 +4,15 @@ import { FiCalendar, FiMapPin, FiCheck } from 'react-icons/fi';
 const TARGET_DATE = new Date('2026-10-01T00:00:00');
 
 const CONFERENCE_OBJECTIVES = [
+  'Encourage missionary parents in raising children who love and serve the Lord.',
   'Educate parents on MK/TCK identity and the lifelong impact of missionary life on children.',
   'Emphasize the need for intentional care for children at every stage of missionary transition.',
   'Provide space for African missionary parents to share challenges and triumphs.',
-  'Encourage missionary parents in raising children who love and serve the Lord.',
+  
   'Explore how generational differences affect communication and values. Equip parents with skills in empathy, listening, and meaningful connection.',
   'Highlight trauma, transitions, and identity challenges. Address the unique challenges faced by African MKs/TCKs.',
-  'Foster peer learning and shared experiences. Connect families with MK/TCK care resources and support networks.',
+  'Foster peer learning and shared experiences.', 
+  'Connect families with MK/TCK care resources and support networks.',
   'Build a supportive community through networking and shared stories.',
 ];
 
