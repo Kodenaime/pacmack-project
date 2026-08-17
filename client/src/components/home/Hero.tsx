@@ -16,11 +16,6 @@ const Hero: React.FC = () => {
       
       {/* Hero Overlay Container */}
       <div className="relative z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-225 mt-16 p-8 flex flex-col items-center text-center">
-        
-        {/* Status Badge */}
-        {/* <div className="flex items-center gap-2 border-2 border-brand-black px-5 py-2 rounded-full mb-6 bg-white/80 backdrop-blur-sm shadow-sm transition-smooth hover:bg-white">
-          <p className="text-sm md:text-base font-bold text-brand-black">Welcome to the PACMACK Community</p>
-        </div> */}
 
         <div className="relative w-full drop-shadow-md bg-black/60 backdrop-blur-md rounded-2xl p-6 md:p-10 border border-white/10">
           {/* Main Title */}
@@ -40,7 +35,7 @@ const Hero: React.FC = () => {
             </span>
             
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-black mb-4 text-white drop-shadow-sm">
-              Missionary And Cross-cultural Kids (PACMACK)
+              Missionary And Cross-Cultural Kids (PACMACK)
             </h2>
             
             <p className="text-base md:text-xl text-white/80 font-bold max-w-3xl mx-auto drop-shadow-sm leading-relaxed">

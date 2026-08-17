@@ -7,13 +7,11 @@ import Sponsors from '../components/home/Sponsors'
 import Team from '../components/home/Team'
 import Faqs from '../components/home/Faqs'
 import Contact from '../components/home/Contact'
-import Donation from '../components/home/Donation'
+import ConferenceDonation from '../components/parents/ConferenceDonation'
 import Footer from '../layout/Footer'
 import Testimonials from '../components/home/Testimonials'
-import CountdownTimer from '../components/parents/CountdownTimer'
-import ParentsConferenceTeaser from '../components/parents/ParentsConferenceTeaser'
 
-const HomePage: React.FC = () => {
+const CommunityPage: React.FC = () => {
 
   useEffect(() => {
     const hash = window.location.hash;
@@ -26,8 +24,6 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <Hero />
-      <ParentsConferenceTeaser />
-      <CountdownTimer />
       <About />
       <Goal />
       <Highlights />
@@ -36,10 +32,10 @@ const HomePage: React.FC = () => {
       <Team />
       <Faqs />
       <Contact />
-      <Donation />
+      <ConferenceDonation />
       <Footer />
     </div>
   )
 }
 
-export default HomePage
+export default CommunityPage

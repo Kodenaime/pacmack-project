@@ -4,7 +4,7 @@ import Footer from '../layout/Footer'
 import HighlightsHero from '../components/highlights/HighlightsHero'
 import About2025 from '../components/highlights/About2025'
 import HighlightsSlider from '../components/highlights/HighlightsSlider'
-import Donation from '../components/home/Donation'
+import ConferenceDonation from '../components/parents/ConferenceDonation'
 import Speakers2025 from '../components/highlights/Speakers2025'
 import ConferenceVideo from '../components/highlights/ConferenceVideo'
 import AboutConference from '../components/highlights/AboutConference'
@@ -30,7 +30,7 @@ const HighlightsPage: React.FC = () => {
       <Speakers2025 />
       <MkConferenceTeam />
       <ConferenceVideo />
-      <Donation />
+      <ConferenceDonation />
       <Footer />
     </div>
   )

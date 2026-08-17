@@ -14,12 +14,9 @@ const Goal: React.FC = () => {
           </h1>
           
           <div className="space-y-6 text-brand-black/80 text-lg leading-relaxed">
-            <p className='text-[16px]'>
-              PACMACK was born from a need that had long existed across Africa: a place where Missionary Kids (MKs) and children of cross-cultural Christian workers could find community, belonging, and understanding among people who shared similar life experiences.
-            </p>
 
             <p className='text-[16px]'>
-              More than a conference, <strong className="text-brand-black">PACMACK</strong> is a growing movement committed to strengthening MK care across the continent. It serves as a gathering point where meaningful relationships are formed, resources are shared, and individuals, families, churches, and organizations are equipped to better understand and support the unique journey of African MKs. The vision extends beyond a single event. <strong className="text-brand-black">PACMACK</strong> seeks to foster sustainable MK communities and intentional care networks throughout Africa, creating spaces where MKs are seen, supported, and empowered to flourish.
+              The vision extends beyond a single event. <strong className="text-brand-black">PACMACK</strong> seeks to foster sustainable MK communities and intentional care networks throughout Africa, creating spaces where MKs are seen, supported, and empowered to flourish.
             </p>
 
             <p className='text-[16px]'>

@@ -9,7 +9,9 @@ const Navbar: React.FC = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: 'About', path: 'about', isHash: true },
+    { name: 'Home', path: '/', isHash: false },
+    // { name: 'About', path: 'about', isHash: true },
+    { name: 'Community', path: '/community', isHash: false },
     { name: 'Programs', path: '/programs', isHash: false },
     { name: 'Gallery', path: '/gallery', isHash: false },
     { name: 'Contact', path: 'contact', isHash: true },
@@ -20,11 +22,11 @@ const Navbar: React.FC = () => {
 
     if (isHash) {
       e.preventDefault();
-      if (location.pathname === '/') {
+      if (location.pathname === '/community') {
         const element = document.getElementById(path);
         element?.scrollIntoView({ behavior: 'smooth' });
       } else {
-        navigate(`/#${path}`);
+        navigate(`/community#${path}`);
         setTimeout(() => {
           const element = document.getElementById(path);
           element?.scrollIntoView({ behavior: 'smooth' });
@@ -35,7 +37,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-brand-white shadow-soft">
-      <nav className="w-full md:max-w-[var(--container-lg)] mx-auto h-20 flex justify-between items-center px-6 md:px-0">
+      <nav className="w-full md:max-w-lg mx-auto h-20 flex justify-between items-center px-6 md:px-0">
         
         <Link to="/" className="w-14 md:w-20 transition-smooth hover:scale-105">
           <img src={logo} alt="Pacmack Logo" className="w-full h-auto" />

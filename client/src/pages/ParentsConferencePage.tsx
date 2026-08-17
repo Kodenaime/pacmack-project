@@ -6,8 +6,12 @@ import ParentsConferenceTeam from '../components/parents/ParentsConferenceTeam';
 import ConferenceSpeakers from '../components/parents/ConferenceSpeakers';
 import PlenaryTopics from '../components/parents/PlenaryTopics';
 import ConferenceWorkshops from '../components/parents/ConferenceWorkshops';
+import CountdownTimer from '../components/parents/CountdownTimer';
+import ConferenceDonation from '../components/parents/ConferenceDonation';
 
-const ParentsConference2026: React.FC = () => {
+const ParentsConferencePage: React.FC = () => {
+  const [showFullText, setShowFullText] = React.useState(false);
+
   return (
     <div className="bg-brand-bg min-h-screen flex flex-col font-sans">
       <Navbar />
@@ -20,10 +24,6 @@ const ParentsConference2026: React.FC = () => {
             
               {/* Left Text Block */}
               <div className="lg:col-span-7 text-center lg:text-left">
-                {/* Fixed: Replaced hardcoded orange with your primary theme layout tokens */}
-                <span className="text-primary font-black uppercase tracking-widest text-sm bg-primary-light/10 px-4 py-2 inline-block mb-6 rounded-md">
-                  Oct 1st - 4th, 2026 | Abuja, Nigeria
-                </span>
                 <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 leading-none">
                   Parents Conference <br />
                   <span className="text-primary">...Not The Sacrifice</span>
@@ -59,16 +59,38 @@ const ParentsConference2026: React.FC = () => {
           </div>
         </section>
 
+        {/* Countdown Timer */}
+        <CountdownTimer />
+
         {/* Introduction Context */}
-        <section className="py-16 bg-brand-white border-b border-brand-gray/10">
+        <section className="py-16 bg-brand-white border-b border-brand-gray/10" id="intro-section">
           <div className="container-lg max-w-3xl text-lg text-brand-black/90 leading-relaxed space-y-6">
             <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-brand-black mb-6 border-b-4 border-black pb-2">
               Why a Conference for Parents of TCKs?
             </h2>
             <div className="text-gray-700 space-y-4 leading-relaxed text-[16px]">
-                <p>African missionary parents love their children deeply. But love alone is not enough.</p>
-                <p>After PACMACK's 2025 conference for MKs and TCKs, one truth stood out above all others: the families sending Africa's missionaries to the field are largely on their own, unequipped, unsupported, and unseen.</p>
-              </div>
+              <p>African missionary parents love their children deeply. But love alone is not enough.</p>
+              <p>
+                For decades African missionary families serving across Africa and beyond have been dealing with a very complex path for which they are mostly unprepared. Their children who get left behind, who go with them and those born to them on the mission field also navigate very challenging experiences growing up among diverse cultures, frequent movements, education disruption, speaking multiple languages, and managing high social, emotional, psychological and spiritual expectations. Consequently these children carry emotional pains, silent struggles, unresolved transition traumas, and cultural grief. The cycle of under-resourced parents and wounded MKs/TCKs continues as the norm.{!showFullText && '...'}
+              </p>
+
+              {showFullText && (
+                <>
+                  <p>PACMACK Conference for Missionary parents and Cross-cultural Christian Workers is set to break this cycle.</p>
+                  <p>PACMACK 2026 seeks to encourage, educate and equip missionary parents to raise their children as a trust from God to be nurtured and not as a collateral loss to the God they love and passionately serve.</p>
+                  <p>Date: October 1st to 4th, 2026, in Abuja, Nigeria.</p>
+                  <p>The theme:  "...Not the Sacrifice" -  Nurturing MKs/TCKs As a Trust" (based on Genesis 22:1-18)</p>
+                  <p>African missionary families are known for their doggedness, zeal and sacrifice in obeying the great commission. We seek to inspire a multi-generational African global Gospel impact through emotionally healthy MKs /TCKs rooted in their faith.</p>
+                </>
+              )}
+
+              <button
+                onClick={() => setShowFullText(!showFullText)}
+                className="text-primary font-black uppercase tracking-widest text-xs hover:underline mt-2 flex items-center cursor-pointer"
+              >
+                {showFullText ? 'Read Less' : 'Read More'}
+              </button>
+            </div>
             <p className="font-bold border-l-4 border-primary pl-4 italic bg-primary-light rounded-r-lg text-[16px] p-4">
               PACMACK parents conference is the place for parents, MK caregivers, and mission leaders to gain a deeper understanding of MKs and TCKs and to find resources to support and care for them.
             </p>
@@ -76,8 +98,8 @@ const ParentsConference2026: React.FC = () => {
         </section>        
         
         <ConferenceSpeakers />
-        <PlenaryTopics />
-        <ConferenceWorkshops />
+        <PlenaryTopics limit={2} />
+        <ConferenceWorkshops limit={3} />
         <ParentsConferenceTeam />
 
         {/* What We're Here to Do */}
@@ -94,20 +116,20 @@ const ParentsConference2026: React.FC = () => {
                 { title: "Share", text: "Find a safe space for African missionary parents to share challenges and triumphs with others who truly understand." },
                 { title: "Understand", text: "Explore how generational differences shape communication and values within missionary families." },
                 { title: "Address", text: "Confront trauma, transitions, and identity challenges while addressing the unique realities of African MKs and TCKs." },
-                // { title: "Connect", text: "Build a supportive community through networking, shared stories, and connections to MK/TCK care resources." }
               ].map((item, idx) => (
                 <div key={idx} className="bg-brand-white p-8 shadow-soft border-t-4 border-black flex flex-col gap-4">
-                  {/* Fixed: Component heading matches layout accenting strategy */}
                   <h3 className="text-xl font-black uppercase tracking-tight text-primary">{item.title}</h3>
                   <p className="text-brand-text leading-relaxed text-sm text-[16px]">{item.text}</p>
                 </div>
               ))}
               <div className="bg-black text-white p-8 flex flex-col justify-center items-center text-center gap-4 md:col-span-2 lg:col-span-1">
-                <p className="font-bold text-lg italic">A generation of African cross-cultural workers is possible. It starts with the families who raise them.</p>
+                <p className="font-bold text-lg italic">A multi-generation of African cross-cultural workers is possible. It starts with the families who raise them.</p>
               </div>
             </div>
           </div>
         </section>
+
+        <ConferenceDonation />
 
         {/* Trigger Questions Section */}
         <section className="py-20 bg-brand-white">
@@ -127,14 +149,12 @@ const ParentsConference2026: React.FC = () => {
                 "How do I nurture a stable, Christ-centered identity in my child when we move often?"
               ].map((q, idx) => (
                 <div key={idx} className="flex gap-4 p-6 bg-brand-bg rounded-none border-l-4 border-black">
-                  {/* Fixed: Icon maps to master styling token */}
                   <FiHelpCircle className="text-primary shrink-0 mt-1" size={20} />
                   <p className="font-medium text-brand-black text-[16px]">{q}</p>
                 </div>
               ))}
             </div>
             
-            {/* Fixed: Outer tracking layout matches standard container utilities */}
             <div className="mt-16 text-center bg-primary-light rounded-lg p-8 border-2 border-dashed border-primary">
               <p className="text-xl font-black uppercase tracking-tight text-brand-black mb-4">
                 Come find the language, tools, resources, and a community that cares.
@@ -157,4 +177,4 @@ const ParentsConference2026: React.FC = () => {
   );
 };
 
-export default ParentsConference2026;
+export default ParentsConferencePage;

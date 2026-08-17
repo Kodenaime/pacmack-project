@@ -1,20 +1,20 @@
 import React from 'react'
 import { Routes, Route } from 'react-router'
-import HomePage from './pages/HomePage'
+import CommunityPage from './pages/CommunityPage'
 import Highlights from './pages/HighlightsPage'
-import Resources from './pages/Resources'
 import Gallery from './pages/Gallery'
 import JoinCommunity from './pages/CommunityRegister'
-import ParentsConference2026 from './pages/ParentsConference2026'
+import ParentsConferencePage from './pages/ParentsConferencePage'
 import ProgramsPage from './pages/ProgramsPage'
+import ConferenceDetailsPage from './pages/ConferenceDetailsPage'
 
 const App: React.FC = () => {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path='/resources' element={<Resources />} />
-        <Route path='/conference2026' element={<ParentsConference2026 />} />
+        <Route path="/" element={<ParentsConferencePage />} />
+        <Route path="/community" element={<CommunityPage />} />
+        <Route path="/conference-details" element={<ConferenceDetailsPage />} />
         <Route path='/highlights' element={<Highlights />} />
         <Route path='/programs' element={<ProgramsPage />} />
         <Route path='/gallery' element={<Gallery/>} />

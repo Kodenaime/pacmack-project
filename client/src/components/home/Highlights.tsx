@@ -42,7 +42,7 @@ const Highlights: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-12 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-brand-black mb-4">
-            Conference Highlights
+            PACMACK 1.0 Conference Highlights
           </h2>
           <p className="text-gray-500 text-lg">
             Engaging talks and faith-filled sessions designed to equip missionary kids 
