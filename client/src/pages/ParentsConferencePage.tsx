@@ -22,8 +22,19 @@ const ParentsConferencePage: React.FC = () => {
           <div className="container-lg">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
-              {/* Left Text Block */}
-              <div className="lg:col-span-7 text-center lg:text-left">
+              {/* Left Flyer Container Asset */}
+              <div className="lg:col-span-5 flex justify-center order-2 lg:order-1">
+                <div className="relative max-w-sm w-full bg-[#1a1a1a] p-4 border border-white/10 shadow-2xl">
+                  <img 
+                    src="/2026flyer.jpeg" 
+                    alt="Official PACMACK 2026 Parents Conference Theme Poster" 
+                    className="w-full h-auto object-contain"
+                  />
+                </div>
+              </div>
+
+              {/* Right Text Block */}
+              <div className="lg:col-span-7 text-center lg:text-left order-1 lg:order-2">
                 <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-4 leading-none">
                   Parents Conference <br />
                   <span className="text-primary">...Not The Sacrifice</span>
@@ -44,17 +55,6 @@ const ParentsConferencePage: React.FC = () => {
                 </a>
               </div>
 
-              {/* Right Flyer Container Asset */}
-              <div className="lg:col-span-5 flex justify-center">
-                <div className="relative max-w-sm w-full bg-[#1a1a1a] p-4 border border-white/10 shadow-2xl">
-                  <img 
-                    src="/2026flyer.jpeg" 
-                    alt="Official PACMACK 2026 Parents Conference Theme Poster" 
-                    className="w-full h-auto object-contain"
-                  />
-                </div>
-              </div>
-
             </div>
           </div>
         </section>
@@ -66,7 +66,7 @@ const ParentsConferencePage: React.FC = () => {
         <section className="py-16 bg-brand-white border-b border-brand-gray/10" id="intro-section">
           <div className="container-lg max-w-3xl text-lg text-brand-black/90 leading-relaxed space-y-6">
             <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-brand-black mb-6 border-b-4 border-black pb-2">
-              Why a Conference for Parents of TCKs?
+              Why a Conference for Parents?
             </h2>
             <div className="text-gray-700 space-y-4 leading-relaxed text-[16px]">
               <p>African missionary parents love their children deeply. But love alone is not enough.</p>
@@ -78,8 +78,6 @@ const ParentsConferencePage: React.FC = () => {
                 <>
                   <p>PACMACK Conference for Missionary parents and Cross-cultural Christian Workers is set to break this cycle.</p>
                   <p>PACMACK 2026 seeks to encourage, educate and equip missionary parents to raise their children as a trust from God to be nurtured and not as a collateral loss to the God they love and passionately serve.</p>
-                  <p>Date: October 1st to 4th, 2026, in Abuja, Nigeria.</p>
-                  <p>The theme:  "...Not the Sacrifice" -  Nurturing MKs/TCKs As a Trust" (based on Genesis 22:1-18)</p>
                   <p>African missionary families are known for their doggedness, zeal and sacrifice in obeying the great commission. We seek to inspire a multi-generational African global Gospel impact through emotionally healthy MKs /TCKs rooted in their faith.</p>
                 </>
               )}
@@ -92,7 +90,7 @@ const ParentsConferencePage: React.FC = () => {
               </button>
             </div>
             <p className="font-bold border-l-4 border-primary pl-4 italic bg-primary-light rounded-r-lg text-[16px] p-4">
-              PACMACK parents conference is the place for parents, MK caregivers, and mission leaders to gain a deeper understanding of MKs and TCKs and to find resources to support and care for them.
+              PACMACK parents conference is the place for parents, MK caregivers, and mission leaders to gain a deeper understanding in supporting their MKs/TCKs and to find resources to support and care for them.
             </p>
           </div>
         </section>        

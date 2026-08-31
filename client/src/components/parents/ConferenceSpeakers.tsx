@@ -25,13 +25,8 @@ const ConferenceSpeakers: React.FC = () => {
     }
   };
 
-  const speakers = conferenceSpeakers
-    .filter((s) => s.type === 'speaker')
-    .sort((a, b) => (b.image ? 1 : 0) - (a.image ? 1 : 0));
-  
-  const guests = conferenceSpeakers
-    .filter((s) => s.type === 'guest')
-    .sort((a, b) => (b.image ? 1 : 0) - (a.image ? 1 : 0));
+  const speakers = conferenceSpeakers.filter((s) => s.type === 'speaker');
+  const guests = conferenceSpeakers.filter((s) => s.type === 'guest');
 
   return (
     <section className="py-20 bg-brand-bg" id="speakers">
@@ -110,7 +105,7 @@ const ConferenceSpeakers: React.FC = () => {
         <div className="relative">
           <div className="flex justify-between items-end mb-8">
             <h3 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-brand-black border-l-4 border-black pl-4">
-              Conference Guests
+              Virtual Guests
             </h3>
             <div className="flex gap-3">
               <button

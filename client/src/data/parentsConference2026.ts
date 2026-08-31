@@ -4,7 +4,9 @@ import roli from '../assets/roli.jpeg';
 import ut from '../assets/ut.jpeg';
 import hooper from '../assets/hooper.jpeg';
 import joana from '../assets/joana.jpg';
-import doromi from '../assets/doromi.jpeg';
+// import doromi from '../assets/doromi.jpeg';
+import kolo from '../assets/kolo.webp';
+import hosea from '../assets/hosea.webp'
 
 const parentsConference2026: TeamMember[] = [
   {
@@ -25,12 +27,12 @@ const parentsConference2026: TeamMember[] = [
     name: 'Tolu Oladipo',
     body: "Tolu Oladipo, often called Uncle Tolu or UT, is a missionary child who grew up in Nigeria and abroad alongside his three younger brothers. His parents were full-time missionaries with Scripture Union and are now retired. He has spent over 30 years working in banking, HR, and management consulting. With a background in physics and an MBA, he has held leadership roles at organizations like Stanbic IBTC, and Liberty Health, focusing on operations, strategy, and people management. These days, he provides advisory services through his consulting firm while serving on a few company boards. UT values his roots as the son of missionaries and remains active in his faith community. He enjoys mentoring young people and has volunteered in church music and youth ministries over the years. He and his wife live in Abuja, where they’ve raised their two children who are now adults. Tolu is very burdened and passionate about  MKs in Africa getting the care they deserve and that launches them into vibrant leaders anywhere in the world.",
   },
-   {
-    id: 4,
-    image: doromi,
-    name: 'Pastor Modupeola Temiloluwa Oluwadoromi',
-    body: "Pastor Modupeola Temiloluwa Oluwadoromi is a seasoned missionary, teacher, nurse, and prayer warrior with over 33 years in ministry. She serves with Christian Missionary Funds (CMF), training and mentoring evangelists across Nigeria, and co-pastors at Embrace International Assembly Church, Ikorodu, Lagos. A trained Nurse, Midwife, and Educator from UCH Ibadan, she began her mission work with Children Evangelism Ministry in Koma Hills, combining healthcare with evangelism. Married to Pastor Emmanuel Oluwadoromi, she is a devoted wife and mother of five. Known for her hospitality, counseling, and Proverbs 31 lifestyle, Pastor Modupeola impacts children, youth, families, and missionaries with grace, wisdom, and a heart for raising leaders for Christ.",
-  },
+  //  {
+  //   id: 4,
+  //   image: doromi,
+  //   name: 'Pastor Modupeola Temiloluwa Oluwadoromi',
+  //   body: "Pastor Modupeola Temiloluwa Oluwadoromi is a seasoned missionary, teacher, nurse, and prayer warrior with over 33 years in ministry. She serves with Christian Missionary Funds (CMF), training and mentoring evangelists across Nigeria, and co-pastors at Embrace International Assembly Church, Ikorodu, Lagos. A trained Nurse, Midwife, and Educator from UCH Ibadan, she began her mission work with Children Evangelism Ministry in Koma Hills, combining healthcare with evangelism. Married to Pastor Emmanuel Oluwadoromi, she is a devoted wife and mother of five. Known for her hospitality, counseling, and Proverbs 31 lifestyle, Pastor Modupeola impacts children, youth, families, and missionaries with grace, wisdom, and a heart for raising leaders for Christ.",
+  // },
   {
     id: 5,
     image: hooper,
@@ -42,6 +44,18 @@ const parentsConference2026: TeamMember[] = [
     image: joana,
     name: 'Bogunjoko, Joanna',
     body: "Joanna is a Nigerian Medical Doctor, and along with her husband, (also a Doctor) served over 11 years at SIM Hospital Galmi in Niger Republic. Thereafter, they served at SIM International, first leading the work in both West Africa and Europe, and later over SIM's global work. They currently serve as part of the Lausanne Movement leadership. Joanna has traveled extensively around the world with her husband in their global leadership role. All along the way, Joanna constantly connects with people to pray for and with them and provides pastoral support as may be needed. Her ministry tools as a prayer warrior include faith in God who loves to have us in His presence, and confidence in God who keeps His word. Joshua and Joanna have 2 adult children.",
+  },
+  {
+    id: 7,
+    image: hosea,
+    name: 'Hosea Kimaiyo',
+    body: "Hosea Kimaiyo is the founder and Executive Director of WÓLDENA AFRIKA, a pioneering organization committed to the holistic care of African missionaries' children. Born into a family of missionaries serving among unreached people groups in Eastern Kenya, Hosea's experience as a Missionary Kid (MK) immersed him in diverse cultural environments, and MK experiences that in time planted the seeds for his life’s work today in advocating for the support and empowering of MKs (TCKs).  WÓLDENA AFRIKA serves MKs through a fourfold strategic framework—Spiritual Care, Psychosocial Support, Education and Career Development, and Resource Mobilization and Sustainability. Hosea leads from Kenya Africa's efforts to address the unique needs and challenges faced by this often-overlooked population.",
+  },
+  {
+    id: 8,
+    image: kolo,
+    name: 'Amina Kolo',
+    body: "Amina Kolo is a homeschooling mom of 3 children, grades 10 to 4. All three were born while the family served as Resource Mobilizers for frontier missions in Kenya from 2009 until their return to Nigeria in 2022. She currently serves as Project Manager with Global Activation Ministry (Activate) in Abuja. Activate is a mission mobilization organization focused on connecting God’s people to God’s mission around the world. Amina is passionate about facilitating learning among believers, building a Member Care culture among African missionaries, and providing trauma-informed care for people in ministry.",
   },
   
 
