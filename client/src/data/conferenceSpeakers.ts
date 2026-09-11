@@ -12,13 +12,15 @@ import bakari from '../assets/2026-speakers/bakari.jpeg'
 import dupe from '../assets/2026-speakers/dupe.jpg'
 import andrew from '../assets/2026-speakers/andrew.jpeg'
 import linda from '../assets/2026-speakers/linda.jpeg'
-import mindy from '../assets/2026-speakers/mindy.jpeg'
-import guma from '../assets/2026-speakers/guma.jpeg'
+import mindy from '../assets/2026-speakers/mindy.webp'
+// import guma from '../assets/2026-speakers/guma.jpeg'
 import bret from   '../assets/2026-speakers/bret.jpeg'
 import ray from '../assets/2026-speakers/ray.jpg'
 import yimer from '../assets/2026-speakers/yima.webp'
 import emma from '../assets/2026-speakers/emma.webp'
 import jon from '../assets/2026-speakers/jon.webp'
+import phil from '../assets/2026-speakers/phil.webp'
+import chris from '../assets/2026-speakers/chris.webp'
 
 
 const conferenceSpeakers: ConferenceSpeaker[] = [
@@ -45,16 +47,17 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     id: 4,
     name: 'Chris Beetham',
     title: 'Conference Speaker',
-    role: 'Missionary & Educator',
-    bio: "Chris Beetham serves as a missionary educator and scholar. He and his wife Mindy lived and worked with SIM in Addis Ababa from 2005 to 2015, teaching, equipping, and mentoring Christian leaders across Africa.",
-    type: 'speaker'
+    role: 'Senior NT Editor, Zondervan Academic',
+    bio: "Chris Beetham served with SIM in Ethiopia with his wife Mindy and their family for a decade (2005-2015) in theological education and the training of Christian leaders. He holds a PhD in New Testament and currently serves as a senior NT editor for Zondervan Academic publishing (Grand Rapids, MI, USA) and as the teaching-lead of his church. He is also an author. Chris loves studying, teaching, writing about, and preaching God's Word as an epic story and helping others find their place in God's story.",
+    type: 'speaker',
+    image: chris,
   },
   {
     id: 19,
     name: 'Mindy Beetham',
     title: 'Conference Speaker',
     role: 'TCK Coordinator, SIM International',
-    bio: "Mindy Beetham is SIM International's TCK Coordinator giving her the joy and honor of working with SIM's 70 TCK coordinators who work with SIM families in offices in 70 countries. She is educated as a teacher. She and her husband lived and worked with SIM in Addis Ababa from 2005-2015. She has been in her current role since 2017. She is also mom to five grown children. And mostly gratefully a daughter of the Most High King.",
+    bio: "Mindy Beetham is married to Chris, who with their family served with SIM in Ethiopia for ten years where she was involved with TCK education. She has now been in the role of SIM International's TCK Coordinator serving remotely and traveling from the US (Michigan) for ten years. Chris and Mindy have five young adult TCKs (ages 19-27). She has a degree in primary education and is currently studying for a master's in marriage and family counselling.",
     type: 'speaker',
     image: mindy,
   },
@@ -85,15 +88,16 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     type: 'speaker',
     image: emma,
   },
-  {
-    id: 8,
-    name: 'George Gumah',
-    title: 'Conference Speaker',
-    role: 'MK Caregiver Ghana & Member Care Coordinator',
-    bio: "George Gumah is a highly motivated and experienced advocate for children and vulnerable populations across Ghana and West Africa. With a deep understanding of the challenges faced by African children, George is committed to ensuring their safety, spiritual growth, and overall well-being. His extensive background includes four years of campus ministry, 14 years of full-time mission service, and numerous years dedicated to children's ministry. He currently serves as the Research, Field Ministries, and Member Care Coordinator for Pioneers-Africa, a Child Safety Officer (interviewer) and International Field Representative with Operation Christmas Child (Samaritan's Purse), and Research Director for the Ghana Evangelical Mission Association (GEMA). Inspired by his own positive experiences with childhood ministry, George is passionate about seeing children thrive and feel loved and cared for in their communities. He is married to Joanna Des-bordes, and they have two children.",
-    type: 'speaker',
-    image: guma,
-  },
+  // Commented out until availability is confirmed
+  // {
+  //   id: 8,
+  //   name: 'George Gumah',
+  //   title: 'Conference Speaker',
+  //   role: 'MK Caregiver Ghana & Member Care Coordinator',
+  //   bio: "George Gumah is a highly motivated and experienced advocate for children and vulnerable populations across Ghana and West Africa. With a deep understanding of the challenges faced by African children, George is committed to ensuring their safety, spiritual growth, and overall well-being. His extensive background includes four years of campus ministry, 14 years of full-time mission service, and numerous years dedicated to children's ministry. He currently serves as the Research, Field Ministries, and Member Care Coordinator for Pioneers-Africa, a Child Safety Officer (interviewer) and International Field Representative with Operation Christmas Child (Samaritan's Purse), and Research Director for the Ghana Evangelical Mission Association (GEMA). Inspired by his own positive experiences with childhood ministry, George is passionate about seeing children thrive and feel loved and cared for in their communities. He is married to Joanna Des-bordes, and they have two children.",
+  //   type: 'speaker',
+  //   image: guma,
+  // },
   {
     id: 1,
     name: 'Dr. Susan Sunalini Paul',
@@ -113,10 +117,10 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
   },
   {
     id: 10,
-    name: 'Linda Oladipo',
+    name: 'Linda Ogunshola',
     title: 'Conference Speaker',
     role: 'Member Care Facilitator',
-    bio: "Linda Oladipo is a dedicated trainer, mother, and member care specialist helping missionary families navigate transition and cross-cultural challenges.",
+    bio: "Linda Ogunshola is a dedicated trainer, mother, and member care specialist helping missionary families navigate transition and cross-cultural challenges.",
     type: 'speaker',
     image: linda,
   },
@@ -172,21 +176,31 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     bio: "Ragland Remo Paul is a Christian mission leader, social worker, and advocate for Third Culture Kids and Missionary Kids with over 28 years of experience in missions, community development, and leadership.",
     type: 'guest'
   },
+  // Commented out until details are confirmed
+  // {
+  //   id: 17,
+  //   name: 'Eddie ....',
+  //   title: 'Conference Guest',
+  //   role: 'Member Caregiver',
+  //   bio: "Eddie is a missionary caregiver helping families connect, learn, and grow together on the mission field.",
+  //   type: 'guest'
+  // },
+  // {
+  //   id: 18,
+  //   name: 'Belinda .....',
+  //   title: 'Conference Guest',
+  //   role: 'TCK Supporter',
+  //   bio: "Belinda is an experienced member care facilitator supporting missionary kids and caregivers.",
+  //   type: 'guest'
+  // },
   {
-    id: 17,
-    name: 'Eddie ....',
+    id: 20,
+    name: 'Philip and Heather',
     title: 'Conference Guest',
-    role: 'Member Caregiver',
-    bio: "Eddie is a missionary caregiver helping families connect, learn, and grow together on the mission field.",
-    type: 'guest'
-  },
-  {
-    id: 18,
-    name: 'Belinda .....',
-    title: 'Conference Guest',
-    role: 'TCK Supporter',
-    bio: "Belinda is an experienced member care facilitator supporting missionary kids and caregivers.",
-    type: 'guest'
+    role: 'TCK Care, Nairobi, Kenya',
+    bio: "Philip and Heather moved to Africa as a couple in 2003. Over the last 20+ years, they have served in a variety of roles in TCK Care including teaching, administration, and chaplaincy. Philip is a TCK himself. They currently live in Nairobi, Kenya where Philip serves in leadership and Heather in TCK Care. Philip and Heather have three adult children attending university in the US: Andrew, Kate, and Emily.",
+    type: 'guest',
+    image: phil, 
   }
 ];
 

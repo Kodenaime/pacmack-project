@@ -21,7 +21,7 @@ const PLENARIES: Plenary[] = [
   {
     id: 3,
     topic: 'The children that come along: Recognising the unique Identity of the MK/TCK',
-    speaker: 'Michelle Phoenix & George Gumah',
+    speaker: 'Michelle Phoenix',
   },
   {
     id: 4,
@@ -35,13 +35,18 @@ const PLENARIES: Plenary[] = [
   },
   {
     id: 6,
-    topic: 'Understanding and raising MK/TCK in an intra-continental cultural diversity',
-    speaker: 'Dr Susan Paul',
+    topic: 'Understanding and raising MKs in an intra-continental cultural diversity',
+    speaker: 'Dr. Susan S Paul',
   },
   {
     id: 7,
-    topic: 'Plenary topic to be announced',
-    speaker: 'Speaker to be announced',
+    topic: 'Helpful practices in parenting MKs/TCKs',
+    speaker: 'Emmanuel Oladipo',
+  },
+  {
+    id: 8,
+    topic: 'All work is sacred - MKs/TCK potential for missional careers',
+    speaker: 'Heather Enoch',
   },
 ];
 
