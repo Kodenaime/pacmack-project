@@ -16,7 +16,7 @@ const ConferenceDonation: React.FC = () => {
             <div className="max-w-3xl mx-auto flex flex-col items-center gap-6">
               <h2 className="text-3xl md:text-4xl font-black uppercase">Support PACMACK 2026</h2>
               <p className="text-lg md:text-xl font-semibold leading-relaxed">
-                Your partnership helps us sponsor missionary parents and cover crucial conference costs. SOW into the lives of TCKs/MKs today.
+                Your partnership helps us sponsor missionary parents and cover crucial conference costs. SOW into the lives of TCKs/MKs families today.
               </p>
               
               <button 

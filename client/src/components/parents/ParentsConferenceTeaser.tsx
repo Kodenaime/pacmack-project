@@ -63,6 +63,10 @@ const ParentsConferenceTeaser: React.FC = () => {
                 Register Now
               </a>
             </div>
+
+            <p className="text-xs md:text-sm font-bold text-brand-black/60 mt-4">
+              Registration closes Monday, September 21, 2026
+            </p>
           </div>
         </div>
       </div>

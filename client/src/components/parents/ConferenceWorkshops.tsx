@@ -43,7 +43,7 @@ const WORKSHOPS: Workshop[] = [
     category: 'Child & MK Development',
     title: 'Helping Children Navigate Identity & Belonging',
     about: 'For children raised between cultures, who am I and where do I belong are daily realities. This workshop gives parents tools to understand TCK identity formation and create home environments that anchor children - even amid constant change.',
-    facilitator: 'George Gumah',
+    facilitator: 'Heather Enoch',
   },
   {
     id: 7,
@@ -57,7 +57,7 @@ const WORKSHOPS: Workshop[] = [
     category: 'Child & MK Development',
     title: 'Building Resilient Kids',
     about: 'Resilience is not the absence of struggle - it\'s learning to move through it. This workshop helps parents balance grit and grace, raising emotionally strong children without minimising the real weight of their experiences.',
-    facilitator: 'Roli Samkpulu',
+    facilitator: 'Heather Enoch',
   },
   {
     id: 9,
@@ -76,16 +76,23 @@ const WORKSHOPS: Workshop[] = [
   {
     id: 12,
     category: 'Faith & Spiritual Formation',
-    title: 'When Your Child Questions Everything & When MKs Go Prodigal',
-    about: 'Doubt and deconstruction look different in a TCK. This workshop offers a grace-filled approach to faith formation for children whose cross-cultural experiences have shaped how they encounter God and the Church. It also addresses rebellion and behavioural deviation in MKs - covering early red flags, the emotional landscape parents navigate, and how to love practically when the relationship is strained.',
-    facilitator: 'Mr. Oladipo',
+    title: 'When your child questions everything',
+    about: 'Doubt and deconstruction look different in a TCK. This workshop offers a grace-filled approach to faith formation for children whose cross-cultural experiences have shaped how they encounter God and the church',
+    facilitator: 'Mr Oladipo',
+  },
+  {
+    id: 21,
+    category: 'Faith & Spiritual Formation',
+    title: "When MK'S go prodigal",
+    about: 'What happens when the child raised on the mission field walks away this workshop addresses rebelion and behavioral deviations in mks - Covering ealry red flags, emotional landscapes parents navigate, and how to love practically when the relationship is strained.',
+    facilitator: 'Mr Oladipo',
   },
   {
     id: 13,
     category: 'Faith & Spiritual Formation',
-    title: 'All Work Is Sacred',
-    about: 'Ministry is not a hierarchy. This workshop helps missionary families dismantle the sacred/secular divide, affirming that every vocation pursued faithfully is an act of worship.',
-    facilitator: 'Ode Agabi',
+    title: 'Where Is Home',
+    about: 'Home is a complicated word for TCKs. This workshop guides families through the third culture experience through a biblical lens, helping children find meaning and belonging in their unique stories.',
+    facilitator: 'Ode Agabi/Heidi Tolar',
   },
   {
     id: 14,
@@ -106,28 +113,28 @@ const WORKSHOPS: Workshop[] = [
     category: 'Wellbeing & Care',
     title: 'Who Pastors the Missionary Parent?',
     about: 'Behind every struggling MK is often a parent carrying weight in silence. This workshop asks who cares for the caregiver - and equips churches, mission organisations, and communities to build pastoral presence and sustained, grace-rooted support around both troubled MKs and the parents who love them.',
-    facilitator: 'Dupe Kashimawo & Mindy Beetham',
+    facilitator: 'Dupe and Diti Olawale',
   },
   {
     id: 18,
     category: 'Adult TCKs',
     title: 'Supporting Adult/Independent TCKs',
     about: 'What happens when TCKs grow up? This workshop explores how cross-cultural childhood experiences show up in adulthood and how families and communities can offer meaningful, timely support.',
-    facilitator: 'Mr. Oladipo',
+    facilitator: 'Philip Enoch',
   },
   {
     id: 19,
     category: 'Safety & Digital Life',
     title: 'Child Protection: At Home and Away from Home',
     about: 'Safeguarding children is a non-negotiable - wherever you serve. This workshop equips families with awareness, language, and practical frameworks to protect their children both on the field and during transitions.',
-    facilitator: 'Tolu Oladipo',
+    facilitator: 'Mindy/Tolu Oladipo',
   },
   {
     id: 20,
     category: 'Safety & Digital Life',
     title: 'Parenting in an AI-Driven and Social Media World',
     about: 'AI and social media are shaping how children see themselves and the world. This workshop equips cross-cultural parents with practical frameworks for healthy technology boundaries and intentional digital discipleship.',
-    facilitator: 'Mishael WAMO',
+    facilitator: 'Mishael Nungkopa',
   }
 ];
 

@@ -53,6 +53,9 @@ const ParentsConferencePage: React.FC = () => {
                 >
                   Click here to register 👇🏾
                 </a>
+                <p className="text-gray-400 text-sm font-semibold mt-4">
+                  Registration closes Monday, September 21, 2026
+                </p>
               </div>
 
             </div>
@@ -64,7 +67,8 @@ const ParentsConferencePage: React.FC = () => {
 
         {/* Introduction Context */}
         <section className="py-16 bg-brand-white border-b border-brand-gray/10" id="intro-section">
-          <div className="container-lg max-w-3xl text-lg text-brand-black/90 leading-relaxed space-y-6">
+          <div className="container-lg">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 text-lg text-brand-black/90 leading-relaxed space-y-6">
             <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tight text-brand-black mb-6 border-b-4 border-black pb-2">
               Why a Conference for Parents?
             </h2>
@@ -92,6 +96,7 @@ const ParentsConferencePage: React.FC = () => {
             <p className="font-bold border-l-4 border-primary pl-4 italic bg-primary-light rounded-r-lg text-[16px] p-4">
               PACMACK parents conference is the place for parents, MK caregivers, and mission leaders to gain a deeper understanding in supporting their MKs/TCKs and to find resources to support and care for them.
             </p>
+            </div>
           </div>
         </section>        
         
@@ -165,6 +170,9 @@ const ParentsConferencePage: React.FC = () => {
               >
                 Register For The Conference
               </a>
+              <p className="text-brand-black/70 text-sm font-semibold mt-4">
+                Registration closes Monday, September 21, 2026
+              </p>
             </div>
           </div>
         </section>

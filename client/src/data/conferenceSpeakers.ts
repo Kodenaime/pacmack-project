@@ -21,6 +21,7 @@ import emma from '../assets/2026-speakers/emma.webp'
 import jon from '../assets/2026-speakers/jon.webp'
 import phil from '../assets/2026-speakers/phil.webp'
 import chris from '../assets/2026-speakers/chris.webp'
+import susan from '../assets/2026-speakers/Susan.webp'
 
 
 const conferenceSpeakers: ConferenceSpeaker[] = [
@@ -73,10 +74,10 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
   {
     id: 6,
     name: 'Yohannes Yimer',
-    title: 'Conference Speaker',
+    title: 'Conference Guest',
     role: 'Country Director, SIM Nigeria',
     bio: "Dr. Yohannes Yimer is an Ethiopian family physician, missionary, and mission leader currently serving as Country Director of SIM Nigeria. His journey has taken him from clinical medicine into cross-cultural ministry, leadership development, and mission mobilization.",
-    type: 'speaker',
+    type: 'guest',
     image: yimer,
   },
   {
@@ -104,14 +105,15 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     title: 'Conference Speaker',
     role: 'Physician, Psychologist & Missionary',
     bio: "Dr. Susan Sunalini Remo Paul is a physician, missionary, Certified Christian Psychologist, and disciple-maker passionate about holistic healing of body, mind, and spirit. She holds an MBBS, MD in Pathology, and PGDFM. Since 2008, she has served in cross-cultural ministry among tribal communities in southern Odisha, India, providing medical care, health education, discipleship, and community development. Married to Remo Paul, a TCK, she is raising four TCK sons and brings lived experience of missionary family life. She mentors young people, leads annual Bible camps for 800 children, and speaks on holistic health, Christian psychology, TCKs, and family life.",
-    type: 'speaker'
+    type: 'speaker',
+    image: susan,
   },
   {
     id: 9,
-    name: 'Bakari Bunka',
+    name: 'Rev Bakari Bunga',
     title: 'Conference Speaker',
-    role: 'Retired EMS Missionary',
-    bio: "Bakari Ibrahim Bunga served faithfully as an EMS Missionary for 40 years, 1983-2023, as a Field Missionary in the Core North, Kano, Katsina, and Sokoto. He established 33 mission schools and held key leadership roles including Outreach Coordinator, Schools Services Coordinator, and Administrative Director.",
+    role: '',
+    bio: "Bakari Ibrahim Bunga served faithfully as an EMS Missionary for 40 years, 1983-2023, as a Field Missionary in the Core North, Kano, Katsina, and Sokoto. He established 33 mission schools and held key leadership roles including Outreach Coordinator, Schools Services Coordinator, and Director for Admin.",
     type: 'speaker',
     image: bakari,
   },
@@ -120,7 +122,7 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     name: 'Linda Ogunshola',
     title: 'Conference Speaker',
     role: 'Member Care Facilitator',
-    bio: "Linda Ogunshola is a dedicated trainer, mother, and member care specialist helping missionary families navigate transition and cross-cultural challenges.",
+    bio: "Linda Atue Ogunshola gave her life to Christ as a teenager on campus in 1979. She answered the call to missions in 1984/85 and has served in cross-cultural missions for four decades, with half of that time in rural mission service. A wife and mother of four adult children raised on the mission field, she now serves as a trainer and member care facilitator with Christ's Disciples' Mission in Nigeria. She holds a PhD in Intercultural Leadership and Administration. Linda is passionate about raising a next-generation that loves and fears the Lord. She also leads Hope and Skills Foundation (HASF), mobilizing Community Bible Clubs, school fellowships, and training children/teen workers. She lives in Ibadan with her husband, James M. Ogunshola.",
     type: 'speaker',
     image: linda,
   },
@@ -130,7 +132,7 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     id: 12,
     name: 'Ruth Van Reken',
     title: 'Conference Guest',
-    role: 'Co-author, Third Culture Kids',
+    role: 'TCK Consultant',
     bio: "Ruth Van Reken is a second-generation Third Culture Kid and mother of three adult TCKs. She is co-author of Third Culture Kids: Growing Up Among Worlds, 3rd ed. and author of Letters Never Sent, a personal journal exploring the long-term impact of a cross-cultural childhood.",
     type: 'guest',
   },
@@ -138,7 +140,7 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     id: 11,
     name: 'Rev. Jeremiah Gado',
     title: 'Conference Guest',
-    role: 'Christian Mission Leader',
+    role: 'MK, Christian Mission Leader',
     bio: "Rev. Jeremiah Gado is a prominent Christian leader and speaker, supporting mission families and cross-cultural initiatives.",
     type: 'guest'
   },
@@ -146,7 +148,7 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     id: 13,
     name: 'John Backlay',
     title: 'Conference Guest',
-    role: 'TCK Consultant',
+    role: 'MK, TCK Consultant',
     bio: "John Barclay is an Indian-born missionary kid who spent his early years on the India-Nepal border with his Australian parents. At age six he entered boarding school in South India while his parents moved to Nepal as pioneer missionaries with United Mission to Nepal. After completing grade 10, he relocated to Australia to finish secondary school. Following work as a teacher and pastor, John and his wife Janine returned to Nepal in 1988 with Interserve Partners. For 28 years they served in school education and TCK care. He earned a doctorate in 2010 on families in cross-cultural ministry. Now 'busily retired' in Melbourne, he stays connected to MK/TCK care in Asia and Africa and enjoys time with Janine, their three children, and five grandchildren.",
     type: 'guest',
     image: jon,
@@ -195,12 +197,12 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
   // },
   {
     id: 20,
-    name: 'Philip and Heather',
-    title: 'Conference Guest',
-    role: 'TCK Care, Nairobi, Kenya',
+    name: 'Philip and Heather Enoch',
+    title: 'Conference Speaker',
+    role: 'TCK Consultant, AIN Nairobi',
     bio: "Philip and Heather moved to Africa as a couple in 2003. Over the last 20+ years, they have served in a variety of roles in TCK Care including teaching, administration, and chaplaincy. Philip is a TCK himself. They currently live in Nairobi, Kenya where Philip serves in leadership and Heather in TCK Care. Philip and Heather have three adult children attending university in the US: Andrew, Kate, and Emily.",
-    type: 'guest',
-    image: phil, 
+    type: 'speaker',
+    image: phil,
   }
 ];
 

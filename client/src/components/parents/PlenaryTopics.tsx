@@ -11,7 +11,7 @@ const PLENARIES: Plenary[] = [
   {
     id: 1,
     topic: 'Africans to Africans and to the rest of the world - A generational task of obedience',
-    speaker: 'Dr Yohannes Yimer',
+    speaker: 'Dr Ray Mensah',
   },
   {
     id: 2,
@@ -21,17 +21,12 @@ const PLENARIES: Plenary[] = [
   {
     id: 3,
     topic: 'The children that come along: Recognising the unique Identity of the MK/TCK',
-    speaker: 'Michelle Phoenix',
+    speaker: 'Heather Enoch',
   },
   {
     id: 4,
     topic: "The Call - The African Missionary Parents' Experience/Challenges and things to heed",
     speaker: 'Dr Linda Ogunsola',
-  },
-  {
-    id: 5,
-    topic: 'Not in vain - African MKs/TCKs as world changers, because of and in spite of Challenges',
-    speaker: 'Mr Emmanuel Oladipo',
   },
   {
     id: 6,
@@ -46,7 +41,12 @@ const PLENARIES: Plenary[] = [
   {
     id: 8,
     topic: 'All work is sacred - MKs/TCK potential for missional careers',
-    speaker: 'Heather Enoch',
+    speaker: 'Dr Diti Olawale',
+  },
+  {
+    id: 9,
+    topic: 'Raising Children in Faith in Hard Places and through frequent movement',
+    speaker: 'Rev Bakari Bunga',
   },
 ];
 
