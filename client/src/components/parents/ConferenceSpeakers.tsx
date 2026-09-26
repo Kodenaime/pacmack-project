@@ -195,6 +195,16 @@ const ConferenceSpeakers: React.FC = () => {
                 <p className="text-sm text-neutral-700 leading-relaxed whitespace-pre-line">
                   {selectedSpeaker.bio}
                 </p>
+                {selectedSpeaker.link && (
+                  <a
+                    href={selectedSpeaker.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-block text-sm font-bold text-primary underline hover:text-brand-black transition-smooth"
+                  >
+                    {selectedSpeaker.linkLabel || selectedSpeaker.link}
+                  </a>
+                )}
               </div>
             </div>
           </div>

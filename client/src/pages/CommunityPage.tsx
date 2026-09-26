@@ -4,7 +4,7 @@ import About from '../components/home/About'
 import Goal from '../components/home/Goal'
 import Highlights from '../components/home/Highlights'
 import Sponsors from '../components/home/Sponsors'
-import Team from '../components/home/Team'
+// import Team from '../components/home/Team'
 import Faqs from '../components/home/Faqs'
 import Contact from '../components/home/Contact'
 import ConferenceDonation from '../components/parents/ConferenceDonation'
@@ -29,7 +29,7 @@ const CommunityPage: React.FC = () => {
       <Highlights />
       <Testimonials />
       <Sponsors />
-      <Team />
+      {/* <Team /> */}
       <Faqs />
       <Contact />
       <ConferenceDonation />

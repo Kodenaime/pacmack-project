@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../assets/logo.png';
-import { FiMenu, FiX } from 'react-icons/fi';
+import { FiMenu, FiX, FiGift } from 'react-icons/fi';
 import { Link, useNavigate, useLocation } from 'react-router';
 
 const Navbar: React.FC = () => {
@@ -71,15 +71,13 @@ const Navbar: React.FC = () => {
           ))}
 
           <li className="px-6 md:px-0 w-full md:w-auto">
-            <a 
-              href='https://forms.gle/q8XRATaJV7CLmxqH9' 
-              target="_blank"
-              rel="noreferrer"
+            <Link 
+              to="/community#donate"
               onClick={() => setMenuOpen(false)}
               className="flex items-center justify-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-bold shadow-medium transition-smooth hover:scale-105 w-full md:w-auto"
             >
-              Register Now
-            </a>
+              <FiGift size={18} /> Donate
+            </Link>
           </li>
         </ul>
       </nav>

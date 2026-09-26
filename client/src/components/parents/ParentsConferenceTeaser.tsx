@@ -54,19 +54,7 @@ const ParentsConferenceTeaser: React.FC = () => {
               >
                 Learn More <FiArrowRight size={16} />
               </Link>
-              <a
-                href="https://forms.gle/q8XRATaJV7CLmxqH9"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-primary text-brand-black font-black uppercase tracking-widest text-xs px-8 py-4 transition-smooth hover:bg-brand-black hover:text-brand-white shadow-xl"
-              >
-                Register Now
-              </a>
             </div>
-
-            <p className="text-xs md:text-sm font-bold text-brand-black/60 mt-4">
-              Registration closes Monday, September 21, 2026
-            </p>
           </div>
         </div>
       </div>

@@ -6,6 +6,8 @@ export interface ConferenceSpeaker {
   bio: string;
   type: 'speaker' | 'guest';
   image?: string;
+  link?: string;
+  linkLabel?: string;
 }
 
 import bakari from '../assets/2026-speakers/bakari.jpeg'
@@ -22,7 +24,10 @@ import jon from '../assets/2026-speakers/jon.webp'
 import phil from '../assets/2026-speakers/phil.webp'
 import chris from '../assets/2026-speakers/chris.webp'
 import susan from '../assets/2026-speakers/Susan.webp'
-
+import belinda from '../assets/2026-speakers/belinda.webp'
+import ruth from '../assets/2026-speakers/ruth.webp'
+import  gado from '../assets/2026-speakers/gado.webp'
+import remo from '../assets/2026-speakers/remo.webp'
 
 const conferenceSpeakers: ConferenceSpeaker[] = [
   // Speakers (in exact requested order, keeping Mindy and Chris separated as requested)
@@ -133,16 +138,18 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     name: 'Ruth Van Reken',
     title: 'Conference Guest',
     role: 'TCK Consultant',
-    bio: "Ruth Van Reken is a second-generation Third Culture Kid and mother of three adult TCKs. She is co-author of Third Culture Kids: Growing Up Among Worlds, 3rd ed. and author of Letters Never Sent, a personal journal exploring the long-term impact of a cross-cultural childhood.",
+    bio: "Ruth Van Reken is a second-generation Third Culture Kid and mother of three adult TCKs. She is co-author of Third Culture Kids: Growing Up Among Worlds, 3rd ed. and author of Letters Never Sent, a personal journal exploring the long-term impact of a cross-cultural childhood. For over 30 years she traveled globally speaking on the impact of mobility on individuals, families, and societies. She is co-founder and past chair of Families in Global Transition (FGT), and has contributed chapters to Strangers at Home, Unrooted Childhoods, etc. Ruth now serves as Chairperson of the Governing Board of Safe Passage Across Networks (SPAN) and lives in Indianapolis, IN with her husband, David.",
     type: 'guest',
+    image: ruth,
   },
   {
     id: 11,
-    name: 'Rev. Jeremiah Gado',
+    name: 'Rev. Dr. Jeremiah Malankaltho Gado Saukah',
     title: 'Conference Guest',
-    role: 'MK, Christian Mission Leader',
-    bio: "Rev. Jeremiah Gado is a prominent Christian leader and speaker, supporting mission families and cross-cultural initiatives.",
-    type: 'guest'
+    role: 'Pastor | Missionary | Theologian | Educator | Christian Leadership',
+    bio: "Rev. Dr. Jeremiah Malankaltho Gado Saukah is an accomplished Christian leader, pastor, missionary, theologian, educator, administrator, church planter, and development advocate with several decades of experience spanning Christian ministry, theological education, church administration, missions, evangelism, institutional leadership, and community service. Born into the family of Pastor Gado Saukah and Mama Lalle Saukah, who were among the pioneering African EMS missionaries, Rev. Dr. Gado had his full experience of being a Missionary Kid (MK). Raised within a strong missionary heritage that shaped his lifelong commitment to the Gospel and Christian service, Rev. Gado continues to advocate for the care of missionary families and their children. He is the Executive Director of The Jonah Inheritance (TJI_NIG) contributing through his leadership to the practical expressions of the Gospel through community services and transformation.",
+    type: 'guest',
+    image: gado,
   },
   {
     id: 13,
@@ -164,11 +171,13 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
   },
   {
     id: 15,
-    name: 'Paul Dyke',
+    name: 'Paul & Carol Dyck',
     title: 'Conference Guest',
-    role: 'Cross-cultural Consultant',
-    bio: "Paul Dyke is a dedicated missionary and speaker assisting families in transition and cross-cultural settings.",
-    type: 'guest'
+    role: 'Ambassadors, Canadian Missionary Kid Network & MORE Network',
+    bio: "Paul and Carol have been married for 50 years and live in Abbotsford, on the west coast of Canada. They serve as Ambassadors with the Canadian Missionary Kid Network and the MORE Network, ministries of Outreach Canada. They help facilitate care and support for Missionaries and Missionary Kids of all ages, in times of transition, particularly when repatriating to their passport country. Paul, an MK, was born and raised in India; Carol, the daughter of an Evangelist/Pastor, was born and raised in Canada. Together they have served many years in Missionary and MK Care, Pastoring, Banking and Business Leadership. Their passion is to champion care for MKs and Missionaries.",
+    type: 'guest',
+    link: 'https://more.outreach.ca/',
+    linkLabel: 'MORE Network',
   },
   {
     id: 16,
@@ -176,7 +185,8 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     title: 'Conference Guest',
     role: 'National Team Leader, Interserve India',
     bio: "Ragland Remo Paul is a Christian mission leader, social worker, and advocate for Third Culture Kids and Missionary Kids with over 28 years of experience in missions, community development, and leadership.",
-    type: 'guest'
+    type: 'guest',
+    image: remo,
   },
   // Commented out until details are confirmed
   // {
@@ -187,14 +197,15 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
   //   bio: "Eddie is a missionary caregiver helping families connect, learn, and grow together on the mission field.",
   //   type: 'guest'
   // },
-  // {
-  //   id: 18,
-  //   name: 'Belinda .....',
-  //   title: 'Conference Guest',
-  //   role: 'TCK Supporter',
-  //   bio: "Belinda is an experienced member care facilitator supporting missionary kids and caregivers.",
-  //   type: 'guest'
-  // },
+  {
+    id: 18,
+    name: 'Belinda Ng',
+    title: 'Conference Guest',
+    role: 'Member Care & MK Education Consultant',
+    bio: "Belinda Ng served with her husband in medical missions with Serving In Mission (SIM) in Niger for 12 years. Upon returning to Singapore, she served as Personnel Director with SIM East Asia for 16 years, followed by five years as Member Care and MK Education Consultant with SIM International, before continuing in that role in the East Asia office. She is a founding board member of the Third Culture Care Fellowship (TCKCF), which established a boarding facility for missionary children, and chaired the Fellowship for over two decades after its closure. She was also on the founding planning committee for Singapore's interagency re-entry retreat for TCKs, now in its 13th annual run. She graduated with an MA in Member Care from Redcliffe College, University of Gloucestershire in 2023. She has two married adult TCK sons and enjoys four grandchildren.",
+    type: 'guest',
+    image: belinda,
+  },
   {
     id: 20,
     name: 'Philip and Heather Enoch',

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiHelpCircle } from 'react-icons/fi';
+import { FiHelpCircle, FiGift, FiArrowRight } from 'react-icons/fi';
 import Navbar from '../layout/Navbar';
 import Footer from '../layout/Footer';
 import ParentsConferenceTeam from '../components/parents/ParentsConferenceTeam';
@@ -8,6 +8,7 @@ import PlenaryTopics from '../components/parents/PlenaryTopics';
 import ConferenceWorkshops from '../components/parents/ConferenceWorkshops';
 import CountdownTimer from '../components/parents/CountdownTimer';
 import ConferenceDonation from '../components/parents/ConferenceDonation';
+import PromoVideo from '../components/parents/PromoVideo';
 
 const ParentsConferencePage: React.FC = () => {
   const [showFullText, setShowFullText] = React.useState(false);
@@ -45,22 +46,33 @@ const ParentsConferencePage: React.FC = () => {
                 <p className="text-gray-300 text-base md:text-lg max-w-2xl mb-8 leading-relaxed">
                   Missionary Kids and Third Culture Kids are a global phenomenon that is a reality for the children of African Cross-cultural missionaries and pastors. PACMACK parents conference is the place for parents, MK caregivers, and mission leaders to gain a deeper understanding.
                 </p>
-                <a
-                  href="https://forms.gle/q8XRATaJV7CLmxqH9"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-3 bg-primary text-brand-black font-black uppercase tracking-widest px-10 py-4 shadow-xl transition-all hover:bg-white hover:text-black"
-                >
-                  Click here to register 👇🏾
-                </a>
-                <p className="text-gray-400 text-sm font-semibold mt-4">
-                  Registration closes Monday, September 21, 2026
-                </p>
+
+                <div className="flex flex-col sm:flex-row items-center gap-4">
+                  <a
+                    href="#donate"
+                    className="inline-flex items-center justify-center gap-2 bg-primary text-brand-black font-black uppercase tracking-widest text-xs px-8 py-4 shadow-xl transition-all hover:bg-white hover:text-black"
+                  >
+                    <FiGift size={16} /> Donate
+                  </a>
+                  <a
+                    href="#intro-section"
+                    className="inline-flex items-center justify-center gap-2 border-2 border-white/40 bg-white/10 text-white font-black uppercase tracking-widest text-xs px-8 py-4 transition-all hover:bg-white hover:text-black"
+                  >
+                    Read More <FiArrowRight size={16} />
+                  </a>
+                </div>
               </div>
 
             </div>
           </div>
         </section>
+
+        {/* Introduction Promo Video */}
+        <PromoVideo
+          src="/videos/promo.mp4"
+          poster="/videos/promo-poster.jpg"
+          title="PACMACK: Not The Sacrifice"
+        />
 
         {/* Countdown Timer */}
         <CountdownTimer />
@@ -161,17 +173,6 @@ const ParentsConferencePage: React.FC = () => {
             <div className="mt-16 text-center bg-primary-light rounded-lg p-8 border-2 border-dashed border-primary">
               <p className="text-xl font-black uppercase tracking-tight text-brand-black mb-4">
                 Come find the language, tools, resources, and a community that cares.
-              </p>
-              <a 
-                href="https://forms.gle/q8XRATaJV7CLmxqH9" 
-                target="_blank" 
-                rel="noreferrer" 
-                className="inline-flex items-center gap-2 bg-black text-white px-8 py-3 font-bold uppercase tracking-widest text-sm hover:bg-primary hover:text-brand-black transition-colors"
-              >
-                Register For The Conference
-              </a>
-              <p className="text-brand-black/70 text-sm font-semibold mt-4">
-                Registration closes Monday, September 21, 2026
               </p>
             </div>
           </div>

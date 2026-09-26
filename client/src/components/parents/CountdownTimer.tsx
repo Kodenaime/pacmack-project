@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FiArrowDown, FiCalendar, FiClock, FiMapPin, FiExternalLink } from 'react-icons/fi';
+import { FiArrowDown, FiClock, FiMapPin, FiExternalLink } from 'react-icons/fi';
 
 const TARGET_DATE = new Date('2026-10-01T00:00:00');
 
@@ -88,34 +88,11 @@ const CountdownTimer: React.FC = () => {
             >
               Learn More <FiArrowDown size={14} />
             </button>
-            <a
-              href="https://forms.gle/q8XRATaJV7CLmxqH9"
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-brand-black hover:text-white text-brand-black font-black uppercase tracking-widest text-xs px-8 py-4 rounded-xl transition-all shadow-xl cursor-pointer"
-            >
-              Register Now
-            </a>
           </div>
-
-          <p className="text-xs md:text-sm font-bold text-brand-black/60 mt-4">
-            Registration closes Monday, September 21, 2026
-          </p>
         </div>
 
         {/* Key Information */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          {/* Registration Deadline */}
-          <div className="bg-white rounded-2xl p-6 shadow-soft border border-brand-gray/20 flex flex-col gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary-light text-primary flex items-center justify-center">
-              <FiCalendar size={18} />
-            </div>
-            <h4 className="text-lg font-black uppercase tracking-tight text-brand-black">Registration Closes</h4>
-            <p className="text-sm text-neutral-700 font-semibold leading-relaxed">
-              Monday, September 21, 2026
-            </p>
-          </div>
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {/* Arrival */}
           <div className="bg-white rounded-2xl p-6 shadow-soft border border-brand-gray/20 flex flex-col gap-3">
             <div className="w-10 h-10 rounded-full bg-primary-light text-primary flex items-center justify-center">
