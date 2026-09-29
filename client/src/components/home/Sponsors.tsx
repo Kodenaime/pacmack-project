@@ -13,6 +13,8 @@ import cmf from '../../assets/cmf.jfif';
 import missions from '../../assets/missions.jpg';
 import philhos from '../../assets/philhos.jpeg';
 import phoenix from '../../assets/phoenix.png';
+import cmkn from '../../assets/CanadianMKNetwork_Logo PNG.png';
+import more from '../../assets/more.png';
 
 const Sponsors: React.FC = () => {
   const partners = [
@@ -28,6 +30,8 @@ const Sponsors: React.FC = () => {
     { name: "Mission Enablers", logo: missions, url: "https://meafrica.org/" },
     { name: "PHILHOS", logo: philhos, url: "https://amtb.org.br/philhos/" },
     { name: "Understanding MK's to Foster Flourishing", logo: phoenix, url: "https://michelephoenix.com/" },
+    { name: "Canadian MK Network", logo: cmkn, url: "https://cmkn.outreach.ca/" },
+    { name: "MORE Network", logo: more, url: "https://more.outreach.ca/" },
   ];
 
   return (
@@ -47,7 +51,7 @@ const Sponsors: React.FC = () => {
         {/* Logo Grid */}
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
           {partners.map((partner, index) => (
-            <div key={index} className="flex flex-col items-center max-w-[140px] md:max-w-[180px] group">
+            <div key={index} className="flex flex-col items-center max-w-35 md:max-w-45 group">
               <div className="w-24 h-24 md:w-32 md:h-32 mb-4">
                 <img 
                   src={partner.logo} 

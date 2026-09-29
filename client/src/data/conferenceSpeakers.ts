@@ -28,6 +28,8 @@ import belinda from '../assets/2026-speakers/belinda.webp'
 import ruth from '../assets/2026-speakers/ruth.webp'
 import  gado from '../assets/2026-speakers/gado.webp'
 import remo from '../assets/2026-speakers/remo.webp'
+import paul from '../assets/2026-speakers/paul.webp'
+import ukeme from '../assets/2026-speakers/ukeme.jpg'
 
 const conferenceSpeakers: ConferenceSpeaker[] = [
   // Speakers (in exact requested order, keeping Mindy and Chris separated as requested)
@@ -132,6 +134,16 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     image: linda,
   },
 
+  {
+    id: 21,
+    name: 'Ukeme Abasi Thomas',
+    title: 'Conference Speaker',
+    role: 'Director of Zonal and Field Operations, Go International Mission',
+    bio: "Ukeme Abasi Thomas is a Nigerian missionary, cross-cultural missions practitioner, mentor, and MK/TCK caregiver. He currently serves as Director of Zonal and Field Operations at Go International Mission, an indigenous mission agency. With years of experience across Nigeria as teacher, field worker, mobilization officer, zonal director, and missions administrator, he is passionate about evangelism, discipleship, leadership development, and youth empowerment. He has trained and mentored over 80 Missionary Kids/TCKs. His passion is to see souls reached, disciples made, leaders raised, and communities transformed for God's Kingdom.",
+    type: 'speaker',
+    image: ukeme,
+  },
+
   // Guests (in exact requested order)
   {
     id: 12,
@@ -178,13 +190,14 @@ const conferenceSpeakers: ConferenceSpeaker[] = [
     type: 'guest',
     link: 'https://more.outreach.ca/',
     linkLabel: 'MORE Network',
+    image: paul,
   },
   {
     id: 16,
-    name: 'Remo Paul',
+    name: 'Ragland Remo Paul',
     title: 'Conference Guest',
     role: 'National Team Leader, Interserve India',
-    bio: "Ragland Remo Paul is a Christian mission leader, social worker, and advocate for Third Culture Kids and Missionary Kids with over 28 years of experience in missions, community development, and leadership.",
+    bio: "Ragland Remo Paul is a Christian mission leader, social worker, mentor, and advocate for Third Culture Kids (TCKs) and Missionary Kids (MKs), with more than 28 years of experience in Christian missions, community development, organizational leadership, and servantship development. Remo currently serves as National Team Leader with Interserve India. Prior to this, he served for 17 years as the Executive Secretary of Reaching Hand Society, where he provided strategic leadership in community development, organizational governance, financial stewardship, donor engagement, leadership development, and Christian ministry. His ministry journey has taken him from grassroots community work to national and international mission leadership. As a Third Culture Kid himself, Remo understands from personal experience the opportunities, complexities, and challenges that can accompany growing up between cultures. His own journey has shaped his desire to help TCKs and MKs understand that their cross-cultural experiences are not merely challenges to overcome, but can become significant parts of the story God is writing in their lives. Together with his wife, Dr. Susan Sunalini Remo Paul, Remo has raised four sons who have grown up as TCKs/MKs in southern Odisha, India. Their family's journey has given him many years of practical experience in navigating identity, belonging, transitions, relationships, faith, education, and the realities of raising children in a cross-cultural ministry environment.",
     type: 'guest',
     image: remo,
   },
